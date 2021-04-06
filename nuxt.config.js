@@ -7,7 +7,7 @@ export default {
   ssr: true,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt',
+    title: 'Gravity Dex',
     htmlAttrs: {
       lang: 'en',
     },
@@ -36,9 +36,15 @@ export default {
     '@aceforth/nuxt-optimized-images',
     // https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources',
+    // https://github.com/nuxt-community/color-mode-module
+    '@nuxtjs/color-mode',
   ],
   optimizedImages: {
     optimizeImages: true,
+  },
+  colorMode: {
+    preference: 'dark', // default value of $colorMode.preference
+    fallback: 'dark',
   },
   styleResources: {
     stylus: [

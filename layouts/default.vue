@@ -1,55 +1,46 @@
 <template>
   <div>
-    <Nuxt />
+    <!-- <section-primary-nav /> -->
+    <div id="content">
+      <!-- all page content here - hidden when mobile nav open -->
+      <nuxt />
+    </div>
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<script>
+export default {
+  components: {},
 }
+</script>
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
+<style lang="stylus">
+// Accessible/SEO friendly CSS hiding
+.sr-only
+  position absolute
+  height 1px
+  width 1px
+  overflow hidden
+  clip rect(1px, 1px, 1px, 1px)
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
+// https://nuxtjs.org/examples/transitions
+.page-enter-active
+  transition opacity 0.2s $ease-out
+.page-leave-active
+  transition opacity 0.2s $ease-out
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+.page-enter,
+.page-leave-to
+  opacity 0
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
+#content
+  overflow hidden
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
+.section-first
+  padding-top 5rem // approx navbar max height
+
+@media $breakpoint-large-max
+  .mobile-menu-open
+    #content
+      display none
 </style>

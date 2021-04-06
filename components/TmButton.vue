@@ -20,7 +20,7 @@
     </span>
   </nuxt-link>
   <!-- EXTERNAL -->
-  <tm-link
+  <a
     v-else-if="toLink === 'external'"
     :href="href"
     target="_blank"
@@ -41,7 +41,7 @@
     <span class="tm-button__content">
       <slot />
     </span>
-  </tm-link>
+  </a>
   <!-- DISABLED -->
   <button
     v-else-if="disabled"
