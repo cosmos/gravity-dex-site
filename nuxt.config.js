@@ -84,37 +84,27 @@ export default {
     ],
     link: [
       { rel: 'icon', href: '/favicon.ico' },
-      // { rel: 'icon', type: 'image/svg+xml', href: '/favicon-svg.svg' },
-      // {
-      //   rel: 'apple-touch-icon',
-      //   size: '180x180',
-      //   href: '/apple-touch-icon.png',
-      // },
-      // {
-      //   rel: 'apple-touch-icon-precomposed',
-      //   href: '/apple-touch-icon-precomposed.png',
-      // },
-      // {
-      //   rel: 'icon',
-      //   type: 'image/png',
-      //   sizes: '32x32',
-      //   href: '/favicon-32x32.png',
-      // },
-      // {
-      //   rel: 'icon',
-      //   type: 'image/png',
-      //   sizes: '16x16',
-      //   href: '/favicon-16x16.png',
-      // },
-      // {
-      //   rel: 'manifest',
-      //   href: '/site.webmanifest',
-      // },
-      // {
-      //   rel: 'mask-icon',
-      //   href: '/safari-pinned-tab.svg',
-      //   color: 'black',
-      // },
+      {
+        rel: 'apple-touch-icon',
+        size: '180x180',
+        href: '/apple-touch-icon.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favicon-32x32.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/favicon-16x16.png',
+      },
+      {
+        rel: 'manifest',
+        href: '/site.webmanifest',
+      },
       { rel: 'preconnect', href: 'https://www.google-analytics.com' },
     ],
   },
@@ -123,7 +113,7 @@ export default {
   css: [{ src: '~/assets/styles/main.styl', lang: 'stylus' }],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/vue-scrollto.client.js'],
+  plugins: ['~/plugins/ga.client.js', '~/plugins/vue-scrollto.client.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
