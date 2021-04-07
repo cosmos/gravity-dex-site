@@ -1,5 +1,7 @@
 # gravity-dex-site
 
+[![banner](static/og-image.jpg)](https://gravitydex.io)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c86fe75b-f8e5-40fe-ad5a-3cac7020e15a/deploy-status)](https://app.netlify.com/sites/gravity-dex-site/deploys)
 
 ## Build Setup
