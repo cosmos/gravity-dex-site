@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <section-primary-nav /> -->
+    <section-primary-nav />
     <div id="content">
       <!-- all page content here - hidden when mobile nav open -->
       <nuxt />
