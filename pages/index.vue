@@ -12,15 +12,13 @@
     <div class="section-hero">
       <div class="tm-section tm-container tm-wrapper tm-grid-base">
         <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title">
-          Gravity DEX incentivized testnet.
+          Bringing DeFi To Cosmos
         </h1>
         <div class="split tm-grid-base">
           <div class="left">
             <p class="tm-rf0 tm-lh-copy">
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur
-              et. Curabitur blandit tempus porttitor. Integer posuere erat a
-              ante venenatis dapibus posuere velit aliquet. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam.
+              The Gravity DEX testnet competition starts soon with a ~$200,000
+              prize pool in ATOMs and 10 other Cosmos tokens.
             </p>
           </div>
           <div v-if="toTimezone(endDate, endTime) >= moment()" class="right">
