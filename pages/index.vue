@@ -202,5 +202,5 @@ export default {
     grid-column 6/span 6
 
   .section-hero
-    margin-top var(--spacing-10)
+    margin-top var(--spacing-9)
 </style>
