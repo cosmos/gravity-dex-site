@@ -10,8 +10,8 @@
       </div>
     </div>
 
-    <div class="section-hero">
-      <div class="tm-section tm-container tm-wrapper tm-grid-base">
+    <div class="section-hero tm-section">
+      <div class="tm-container tm-wrapper tm-grid-base">
         <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title">
           Bringing DeFi<br />
           to Cosmos
@@ -107,6 +107,7 @@ export default {
   right 0
   bottom 0
   overflow hidden
+  min-height 54rem
 
 .blob
   position absolute
@@ -139,6 +140,7 @@ export default {
     top -43rem
     right -85rem
     height auto
+    max-height 90rem
     z-index 4
 
 // Hero
@@ -202,5 +204,5 @@ export default {
     grid-column 6/span 6
 
   .section-hero
-    margin-top var(--spacing-9)
+    margin-top var(--spacing-6)
 </style>
