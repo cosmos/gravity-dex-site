@@ -136,7 +136,7 @@ export default {
 <style lang="stylus" scoped>
 // Global
 .icon__right
-  margin-left 0.5em
+  margin-left 0.25em
 
 // Transition
 .fade-enter-active

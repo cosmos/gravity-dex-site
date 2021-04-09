@@ -334,9 +334,8 @@ export default {
   /* disabled state */
   &[disabled]
     cursor not-allowed !important
-    opacity 0.65 !important
-    // re-enable to remove cursor
-    // pointer-events none
+    opacity 1 !important // previously opacity is 0.65, temp workaround for gravity dex site
+    color var(--white-800) // tweak text color opacity when disabled
 
   // sizes
   &__size__s

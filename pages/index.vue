@@ -140,8 +140,8 @@ export default {
 
   &__item
     position absolute
-    top -43rem
-    right -85rem
+    top -47rem
+    right -83rem
     height auto
     max-height 90rem
     z-index 4
@@ -178,8 +178,13 @@ export default {
 .intro
   max-width 30em
   color var(--white-500)
+  font-feature-settings 'liga' on, 'calt' on, 'zero' on // safari
+
+.time
+  margin-top var(--spacing-3)
 
 .date
+  margin-top var(--spacing-3)
   color var(--white-500)
 
 .btn-group
@@ -190,6 +195,7 @@ export default {
     display none
 
   .graphics__item
+    top -44rem
     right -62rem
     max-height 55rem
 
