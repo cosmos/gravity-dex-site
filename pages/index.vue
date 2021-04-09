@@ -10,30 +10,30 @@
       </div>
     </div>
 
-    <div class="section-hero tm-section">
+    <div class="section-hero">
       <div class="tm-container tm-wrapper tm-grid-base">
         <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title">
           Bringing DeFi<br />
           to Cosmos
         </h1>
-        <div class="split tm-grid-base">
-          <div class="left">
-            <p class="intro tm-rf0 tm-lh-copy">
-              The Gravity DEX testnet competition starts soon with a ~$200,000
-              prize pool in ATOMs and 10 other Cosmos tokens.
-            </p>
-            <div class="btn-group">
-              <tm-button
-                to-link="external"
-                href="https://medium.com/tendermint/gravity-dex-testnet-competition-mainnet-launch-on-cosmos-imminent-b95ef5329d06"
-                size="l"
-                variant="text"
-                class="btn"
-                >Learn more<span class="icon__right">&#8599;</span></tm-button
-              >
-            </div>
+        <div class="top">
+          <p class="intro tm-rf0 tm-lh-copy">
+            The Gravity DEX testnet competition starts soon with a ~$200,000
+            prize pool in ATOMs and 10 other Cosmos tokens.
+          </p>
+          <div class="btn-group">
+            <tm-button
+              to-link="external"
+              href="https://medium.com/tendermint/gravity-dex-testnet-competition-mainnet-launch-on-cosmos-imminent-b95ef5329d06"
+              size="l"
+              variant="text"
+              class="btn"
+              >Learn more<span class="icon__right">&#8599;</span></tm-button
+            >
           </div>
-          <div v-if="toTimezone(endDate, endTime) >= moment()" class="right">
+        </div>
+        <div class="split tm-grid-base">
+          <div v-if="toTimezone(endDate, endTime) >= moment()" class="left">
             <div class="overline tm-rf0 tm-medium tm-lh-title tm-overline">
               Registration in
             </div>
@@ -45,6 +45,9 @@
             <div class="date tm-rf0 tm-medium tm-lh-title tm-overline">
               April 21
             </div>
+          </div>
+          <div class="right">
+            <section-form />
           </div>
         </div>
       </div>
@@ -137,8 +140,8 @@ export default {
 
   &__item
     position absolute
-    top -43rem
-    right -85rem
+    top -47rem
+    right -83rem
     height auto
     max-height 90rem
     z-index 4
@@ -147,40 +150,58 @@ export default {
 .section-hero
   position relative
   z-index 200
+  margin-top var(--spacing-8)
 
 .title
+.top
 .split
 .left
 .right
   grid-column 1/-1
 
-.split
-  margin-top var(--spacing-8)
+.top
+  margin-top var(--spacing-6)
 
-.right
-  grid-row 1
+.split
   margin-top 0
 
 .left
+  grid-row 1
+  margin-top var(--spacing-7)
+  padding-bottom var(--spacing-7)
+  border-bottom 1px solid var(--white-100)
+
+.right
   grid-row 2
   margin-top var(--spacing-7)
 
 .intro
   max-width 30em
+  color var(--white-500)
+  font-feature-settings 'liga' on, 'calt' on, 'zero' on // safari
+
+.time
+  margin-top var(--spacing-3)
 
 .date
+  margin-top var(--spacing-3)
   color var(--white-500)
 
 .btn-group
-  margin-top var(--spacing-6)
+  margin-top var(--spacing-3)
 
 @media $breakpoint-xsmall-only
   .star
     display none
 
   .graphics__item
-    right -66rem
-    max-height 80rem
+    top -44rem
+    right -62rem
+    max-height 55rem
+
+@media $breakpoint-small
+  .btn-group
+    display block
 
 @media $breakpoint-medium-only
   .graphics__item
@@ -188,9 +209,19 @@ export default {
     right -66rem
     max-height 80rem
 
+@media $breakpoint-medium
+  .left
+    border 0
+
 @media $breakpoint-xl
   .title
     grid-column 1/span 9
+
+  .top
+    grid-column 1/span 5
+
+  .split
+    margin-top var(--spacing-8)
 
   .left
   .right
@@ -198,11 +229,13 @@ export default {
     grid-row 2
 
   .left
-    grid-column 1/span 5
+    grid-column 1/span 3
+    border-right 1px solid var(--white-100)
+    border-bottom 0
 
   .right
-    grid-column 6/span 6
+    grid-column 4/span 5
 
   .section-hero
-    margin-top var(--spacing-6)
+    margin-top var(--spacing-9)
 </style>
