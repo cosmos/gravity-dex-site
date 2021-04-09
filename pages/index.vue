@@ -203,6 +203,10 @@ export default {
     right -66rem
     max-height 80rem
 
+@media $breakpoint-medium
+  .left
+    border 0
+
 @media $breakpoint-xl
   .title
     grid-column 1/span 9
