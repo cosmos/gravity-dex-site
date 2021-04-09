@@ -150,7 +150,7 @@ export default {
 .section-hero
   position relative
   z-index 200
-  margin-top var(--spacing-6)
+  margin-top var(--spacing-8)
 
 .title
 .top
