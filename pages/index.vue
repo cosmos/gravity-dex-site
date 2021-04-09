@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <div class="section-hero tm-section">
+    <div class="section-hero">
       <div class="tm-container tm-wrapper tm-grid-base">
         <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title">
           Bringing DeFi<br />
@@ -150,6 +150,7 @@ export default {
 .section-hero
   position relative
   z-index 200
+  margin-top var(--spacing-6)
 
 .title
 .top
@@ -189,8 +190,8 @@ export default {
     display none
 
   .graphics__item
-    right -66rem
-    max-height 60rem
+    right -62rem
+    max-height 55rem
 
 @media $breakpoint-small
   .btn-group
@@ -226,5 +227,5 @@ export default {
     grid-column 4/span 5
 
   .section-hero
-    margin-top var(--spacing-6)
+    margin-top var(--spacing-9)
 </style>
