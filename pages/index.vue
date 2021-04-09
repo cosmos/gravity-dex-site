@@ -19,7 +19,7 @@
         <div class="top">
           <p class="intro tm-rf0 tm-lh-copy">
             The Gravity DEX testnet competition starts soon with a ~$200,000
-            prize pool in ATOMs and 10 other Cosmos tokens.
+            prize pool in ATOM and 10 other Cosmos tokens.
           </p>
           <div class="btn-group">
             <tm-button
