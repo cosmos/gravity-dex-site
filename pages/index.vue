@@ -16,24 +16,24 @@
           Bringing DeFi<br />
           to Cosmos
         </h1>
-        <div class="split tm-grid-base">
-          <div class="left">
-            <p class="intro tm-rf0 tm-lh-copy">
-              The Gravity DEX testnet competition starts soon with a ~$200,000
-              prize pool in ATOMs and 10 other Cosmos tokens.
-            </p>
-            <div class="btn-group">
-              <tm-button
-                to-link="external"
-                href="https://medium.com/tendermint/gravity-dex-testnet-competition-mainnet-launch-on-cosmos-imminent-b95ef5329d06"
-                size="l"
-                variant="text"
-                class="btn"
-                >Learn more<span class="icon__right">&#8599;</span></tm-button
-              >
-            </div>
+        <div class="top">
+          <p class="intro tm-rf0 tm-lh-copy">
+            The Gravity DEX testnet competition starts soon with a ~$200,000
+            prize pool in ATOMs and 10 other Cosmos tokens.
+          </p>
+          <div class="btn-group">
+            <tm-button
+              to-link="external"
+              href="https://medium.com/tendermint/gravity-dex-testnet-competition-mainnet-launch-on-cosmos-imminent-b95ef5329d06"
+              size="l"
+              variant="text"
+              class="btn"
+              >Learn more<span class="icon__right">&#8599;</span></tm-button
+            >
           </div>
-          <div v-if="toTimezone(endDate, endTime) >= moment()" class="right">
+        </div>
+        <div class="split tm-grid-base">
+          <div v-if="toTimezone(endDate, endTime) >= moment()" class="left">
             <div class="overline tm-rf0 tm-medium tm-lh-title tm-overline">
               Registration in
             </div>
@@ -45,6 +45,9 @@
             <div class="date tm-rf0 tm-medium tm-lh-title tm-overline">
               April 21
             </div>
+          </div>
+          <div class="right">
+            <section-form />
           </div>
         </div>
       </div>
@@ -149,30 +152,37 @@ export default {
   z-index 200
 
 .title
+.top
 .split
 .left
 .right
   grid-column 1/-1
 
-.split
-  margin-top var(--spacing-8)
+.top
+  margin-top var(--spacing-6)
 
-.right
-  grid-row 1
+.split
   margin-top 0
 
 .left
+  grid-row 1
+  margin-top var(--spacing-7)
+  padding-bottom var(--spacing-7)
+  border-bottom 1px solid var(--white-100)
+
+.right
   grid-row 2
   margin-top var(--spacing-7)
 
 .intro
   max-width 30em
+  color var(--white-500)
 
 .date
   color var(--white-500)
 
 .btn-group
-  margin-top var(--spacing-6)
+  margin-top var(--spacing-3)
 
 @media $breakpoint-xsmall-only
   .star
@@ -180,7 +190,11 @@ export default {
 
   .graphics__item
     right -66rem
-    max-height 80rem
+    max-height 60rem
+
+@media $breakpoint-small
+  .btn-group
+    display block
 
 @media $breakpoint-medium-only
   .graphics__item
@@ -192,16 +206,24 @@ export default {
   .title
     grid-column 1/span 9
 
+  .top
+    grid-column 1/span 5
+
+  .split
+    margin-top var(--spacing-8)
+
   .left
   .right
     margin-top 0
     grid-row 2
 
   .left
-    grid-column 1/span 5
+    grid-column 1/span 3
+    border-right 1px solid var(--white-100)
+    border-bottom 0
 
   .right
-    grid-column 6/span 6
+    grid-column 4/span 5
 
   .section-hero
     margin-top var(--spacing-6)
