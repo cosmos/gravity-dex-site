@@ -199,7 +199,7 @@ $navbar-mobile-menu = 200
     svg
       width auto
     &__gravity
-      height auto
+      height var(--spacing-8)
     &-secondary
       margin-right auto
   &-secondary .logo
@@ -305,6 +305,10 @@ $navbar-mobile-menu = 200
   &-second,
   &-secondary
     display none
+
+@media $breakpoint-xsmall-only
+  .nav .logo__gravity
+    height 2rem
 
 @media $breakpoint-large-max
   .nav
