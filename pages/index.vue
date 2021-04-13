@@ -230,6 +230,9 @@ export default {
   .star
     display none
 
+  .left
+    border 0
+
   .graphics__item
     top -44rem
     right -62rem
