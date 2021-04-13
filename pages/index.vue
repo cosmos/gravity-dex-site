@@ -50,6 +50,26 @@
             <section-form />
           </div>
         </div>
+        <div class="footer">
+          <div class="overline tm-rf-1 tm-medium tm-lh-title tm-overline">
+            Sponsored coins
+          </div>
+          <div class="logos-list">
+            <img src="~static/logos/terra-money.svg" alt="Terra Money logo" />
+            <img
+              src="~static/logos/regen-network.svg"
+              alt="Regen Network logo"
+            />
+            <img src="~static/logos/bitsong.svg" alt="Bitsong logo" />
+            <img src="~static/logos/sentinel.svg" alt="Sentinel logo" />
+            <img src="~static/logos/persistence.svg" alt="Persistence logo" />
+            <img src="~static/logos/akash.svg" alt="Akash logo" />
+            <img src="~static/logos/e-money.svg" alt="E money logo" />
+            <img src="~static/logos/irisnet.svg" alt="Irisnet logo" />
+            <img src="~static/logos/agoric.svg" alt="Agoric logo" />
+            <img src="~static/logos/cosmos-hub.svg" alt="Cosmos Hub logo" />
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -110,7 +130,7 @@ export default {
   right 0
   bottom 0
   overflow hidden
-  min-height 54rem
+  min-height 79rem
 
 .blob
   position absolute
@@ -142,7 +162,7 @@ export default {
     position absolute
     top -47rem
     right -83rem
-    height auto
+    height 78rem
     max-height 90rem
     z-index 4
 
@@ -157,6 +177,7 @@ export default {
 .split
 .left
 .right
+.footer
   grid-column 1/-1
 
 .top
@@ -190,30 +211,70 @@ export default {
 .btn-group
   margin-top var(--spacing-3)
 
+.footer
+  margin-top var(--spacing-9)
+
+.logos-list
+  display grid
+  grid-template-columns repeat(2, 1fr)
+  column-gap var(--spacing-7)
+  row-gap var(--spacing-6)
+  align-items center
+  margin-top var(--spacing-5)
+  margin-bottom var(--spacing-11)
+
+.logos-list > img
+  opacity 0.35
+
 @media $breakpoint-xsmall-only
   .star
     display none
+
+  .left
+    border 0
 
   .graphics__item
     top -44rem
     right -62rem
     max-height 55rem
 
+  .logos-list
+    row-gap var(--spacing-7)
+
+@media $breakpoint-small-only
+  .graphics__item
+    top -67rem
+    right -67rem
+    max-height 80rem
+
 @media $breakpoint-small
   .btn-group
     display block
 
+  .star
+    display none
+
 @media $breakpoint-medium-only
   .graphics__item
-    top -40rem
-    right -66rem
+    top -67rem
+    right -67rem
     max-height 80rem
 
 @media $breakpoint-medium
   .left
     border 0
 
+@media $breakpoint-large
+  .logos-list
+    grid-template-columns repeat(4, 1fr)
+
 @media $breakpoint-xl
+  .layer
+    min-height 70rem
+
+  .star
+    display unset
+
   .title
     grid-column 1/span 9
 
@@ -238,4 +299,7 @@ export default {
 
   .section-hero
     margin-top var(--spacing-9)
+
+  .logos-list
+    grid-template-columns repeat(6, 1fr)
 </style>
