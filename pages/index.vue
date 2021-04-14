@@ -55,6 +55,7 @@
             Sponsored coins
           </div>
           <div class="logos-list">
+            <img src="~static/logos/cosmos-hub.svg" alt="Cosmos Hub logo" />
             <img src="~static/logos/terra-money.svg" alt="Terra Money logo" />
             <img
               src="~static/logos/regen-network.svg"
@@ -67,7 +68,6 @@
             <img src="~static/logos/e-money.svg" alt="E money logo" />
             <img src="~static/logos/irisnet.svg" alt="Irisnet logo" />
             <img src="~static/logos/agoric.svg" alt="Agoric logo" />
-            <img src="~static/logos/cosmos-hub.svg" alt="Cosmos Hub logo" />
           </div>
         </div>
       </div>
