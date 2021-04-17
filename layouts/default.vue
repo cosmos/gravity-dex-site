@@ -39,6 +39,12 @@ export default {
 .section-first
   padding-top 5rem // approx navbar max height
 
+.center
+  display grid
+  place-items center
+  center()
+  width 100% // safari
+
 @media $breakpoint-large-max
   .mobile-menu-open
     #content

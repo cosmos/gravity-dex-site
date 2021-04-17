@@ -319,6 +319,7 @@ $navbar-mobile-menu = 200
         background var(--black)
     &-first
       flex 1 1
+      place-content center
     .tm-link
       &.nuxt-link-exact-active:after
         transform rotate(90deg)
@@ -352,7 +353,8 @@ $navbar-mobile-menu = 200
       display none
     .nav-inner
       display grid
-      grid-template-columns repeat(3, 1fr)
+      // grid-template-columns repeat(3, 1fr)
+      place-content center
 
   .nav-second .nuxt-link-exact-active:before
     content ""

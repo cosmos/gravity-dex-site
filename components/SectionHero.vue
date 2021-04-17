@@ -1,0 +1,55 @@
+<template>
+  <div class="section-hero">
+    <div class="tm-wrapper tm-section tm-container">
+      <h1 class="title tm-rf6 tm-rf7-m-up tm-bold tm-lh-title tm-title">
+        Bringing DeFi<br />
+        to Cosmos
+      </h1>
+      <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
+        The Gravity DEX testnet competition is now live with a ~$200,000 prize
+        pool in ATOM and ten other Cosmos assets.
+      </p>
+      <div class="btn-group">
+        <tm-button
+          to-link="external"
+          href="https://medium.com/tendermint/gravity-dex-testnet-competition-mainnet-launch-on-cosmos-imminent-b95ef5329d06"
+          size="l"
+          variant="contained"
+          class="btn"
+          >Register</tm-button
+        >
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style lang="stylus" scoped>
+.section-hero
+  text-align center
+  position relative
+  z-index 200
+
+.tm-wrapper
+  width 100%
+  padding-bottom 0
+  display flex
+  flex-direction column
+  align-items center
+
+.subtitle
+  margin-top var(--spacing-6)
+  max-width 22em
+  color var(--white-800)
+  font-feature-settings 'liga' on, 'calt' on, 'zero' on // safari
+
+.btn-group
+  margin-top var(--spacing-8)
+
+@media $breakpoint-small
+  .btn-group
+    display block
+</style>
