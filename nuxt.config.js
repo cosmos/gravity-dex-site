@@ -113,7 +113,11 @@ export default {
   css: [{ src: '~/assets/styles/main.styl', lang: 'stylus' }],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/ga.client.js', '~/plugins/vue-scrollto.client.js'],
+  plugins: [
+    '~/plugins/ga.client.js',
+    '~/plugins/vue-scrollto.client.js',
+    '~/plugins/v-tooltip.client.js',
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
