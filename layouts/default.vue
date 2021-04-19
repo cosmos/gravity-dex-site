@@ -5,6 +5,7 @@
       <!-- all page content here - hidden when mobile nav open -->
       <nuxt />
     </div>
+    <section-footer />
   </div>
 </template>
 

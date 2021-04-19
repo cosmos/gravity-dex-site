@@ -13,11 +13,9 @@
     <section-hero />
 
     <div class="tm-section tm-wrapper tm-container">
-      <section-sponsored-coins />
-    </div>
-
-    <div class="tm-section tm-wrapper tm-container">
-      <section-form />
+      <div class="mt-10">
+        <section-sponsored-coins />
+      </div>
     </div>
 
     <div class="tm-section tm-wrapper tm-container">
@@ -62,8 +60,6 @@
       </div>
       <section-questions class="mt-10" />
     </div>
-
-    <section-footer />
   </main>
 </template>
 
