@@ -6,16 +6,21 @@
           <logo-gravity-dex-wordmark class="logo__cosmos" />
           <span class="sr-only">Cosmos</span>
         </nuxt-link>
-        <tm-link :href="formURL" class="link-item">Register</tm-link>
-        <tm-link href="https://v1.cosmos.network/privacy" class="link-item"
-          >Privacy</tm-link
-        >
-        <tm-link
-          href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/"
-          class="link-item"
-          >Code of conduct</tm-link
-        >
-        <nuxt-link to="/signup" class="link-item">Updates</nuxt-link>
+        <div class="link-item">
+          <tm-link :href="formURL">Register</tm-link>
+        </div>
+        <div class="link-item">
+          <tm-link href="https://v1.cosmos.network/privacy">Privacy</tm-link>
+        </div>
+        <div class="link-item">
+          <tm-link
+            href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/"
+            >Code of conduct</tm-link
+          >
+        </div>
+        <div class="link-item">
+          <nuxt-link to="/signup">Updates</nuxt-link>
+        </div>
       </nav>
       <nav ref="links" class="social-icons" role="navigation">
         <tm-link
@@ -189,7 +194,7 @@ export default {
     align-items unset
 
   .link-item
-    padding-left 0
+    margin-left 0
 
   .link-item + .link-item
     margin-top var(--spacing-6)
