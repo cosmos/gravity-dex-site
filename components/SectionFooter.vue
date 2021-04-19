@@ -6,9 +6,7 @@
           <logo-gravity-dex-wordmark class="logo__cosmos" />
           <span class="sr-only">Cosmos</span>
         </nuxt-link>
-        <tm-link href="https://forms.gle/LrX3RffLFpdqcTLh8" class="link-item"
-          >Register</tm-link
-        >
+        <tm-link :href="formURL" class="link-item">Register</tm-link>
         <tm-link href="https://v1.cosmos.network/privacy" class="link-item"
           >Privacy</tm-link
         >
@@ -17,6 +15,7 @@
           class="link-item"
           >Code of conduct</tm-link
         >
+        <nuxt-link to="/signup" class="link-item">Updates</nuxt-link>
       </nav>
       <nav ref="links" class="social-icons" role="navigation">
         <tm-link
@@ -55,6 +54,7 @@
 
 <script>
 import LogoGravityDexWordmark from '~/components/logos/LogoGravityDexWordmark.vue'
+import { FORM_URL } from '~/common/constants'
 
 const iconList = [
   [
@@ -90,125 +90,15 @@ export default {
   data() {
     return {
       links: [
-        // { title: 'Medium', url: 'https://blog.cosmos.network' },
-        // { title: 'Twitter', url: 'https://twitter.com/cosmos' },
-        // { title: 'Reddit', url: 'https://reddit.com/r/cosmosnetwork' },
         { title: 'Telegram', url: 'https://t.me/cosmosproject' },
         { title: 'Discord', url: 'https://discord.gg/vcExX9T' },
-        // { title: 'YouTube', url: 'https://www.youtube.com/c/CosmosProject' },
-      ],
-      menu: [
-        {
-          title: 'Learn',
-          children: [
-            {
-              title: 'Introduction',
-              href: 'https://v1.cosmos.network/intro',
-            },
-            {
-              title: 'Features',
-              href: '/features',
-            },
-            {
-              title: 'Staking',
-              href: '/learn/staking',
-            },
-            {
-              title: 'Get ATOM',
-              href: '/learn/get-atom',
-            },
-            {
-              title: 'FAQ',
-              href: '/learn/faq',
-            },
-          ],
-        },
-        {
-          title: 'Build',
-          children: [
-            {
-              title: 'Starport',
-              href: '/starport',
-            },
-            {
-              title: 'Cosmos SDK',
-              href: 'https://v1.cosmos.network/sdk',
-            },
-            {
-              title: 'Tools',
-              href: 'https://v1.cosmos.network/tools',
-            },
-            {
-              title: 'IBC Protocol',
-              href: 'https://ibcprotocol.org',
-            },
-          ],
-        },
-        {
-          title: 'Explore',
-          children: [
-            {
-              title: 'Tokens',
-              href: '/ecosystem/tokens',
-            },
-            {
-              title: 'Ecosystem',
-              href: '/ecosystem/apps',
-            },
-            {
-              title: 'Wallets',
-              href: '/ecosystem/wallets',
-            },
-            {
-              title: 'Blog',
-              href: 'https://blog.cosmos.network',
-            },
-          ],
-        },
-        {
-          title: 'Participate',
-          children: [
-            {
-              title: 'Community',
-              href: 'https://v1.cosmos.network/community',
-            },
-            {
-              title: 'Contributors',
-              href: 'https://v1.cosmos.network/contributors',
-            },
-            {
-              title: 'Events',
-              href: 'https://v1.cosmos.network/events',
-            },
-            {
-              title: 'Newsletters',
-              href: 'https://v1.cosmos.network/newsletters',
-            },
-          ],
-        },
-        {
-          title: 'Resources',
-          children: [
-            {
-              title: 'About',
-              href: 'https://v1.cosmos.network/about',
-            },
-            {
-              title: 'Press Kit',
-              href: 'https://v1.cosmos.network/presskit',
-            },
-            {
-              title: 'Design',
-              href: 'https://v1.cosmos.network/design',
-            },
-            {
-              title: 'Resources',
-              href: 'https://v1.cosmos.network/resources',
-            },
-          ],
-        },
       ],
     }
+  },
+  computed: {
+    formURL() {
+      return FORM_URL
+    },
   },
   methods: {
     url(link) {
@@ -286,10 +176,27 @@ export default {
     height 1.125rem
 
 .link-item
-  padding-left 1.5rem
+  margin-left 1.5rem
 
 .nav-bottom
   display flex
+
+@media $breakpoint-xsmall-only
+  .logo
+    margin-bottom var(--spacing-6)
+
+  .row
+    align-items unset
+
+  .link-item
+    padding-left 0
+
+  .link-item + .link-item
+    margin-top var(--spacing-6)
+
+  .nav-bottom
+    display flex
+    flex-direction column
 
 @media $breakpoint-medium
   .row

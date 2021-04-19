@@ -12,19 +12,30 @@
       <div class="btn-group">
         <tm-button
           to-link="external"
-          href="https://forms.gle/LrX3RffLFpdqcTLh8"
+          :href="formURL"
           size="l"
           variant="contained"
           class="btn"
-          >Register</tm-button
+          >Register Now</tm-button
         >
       </div>
+      <p class="subtitle tm-rf-1 tm-lh-title mt-7">
+        Registration ends April 30.
+      </p>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import { FORM_URL } from '~/common/constants'
+
+export default {
+  computed: {
+    formURL() {
+      return FORM_URL
+    },
+  },
+}
 </script>
 
 <style lang="stylus" scoped>

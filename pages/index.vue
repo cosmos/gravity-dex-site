@@ -37,7 +37,7 @@
       <div class="center mt-9">
         <tm-button
           to-link="external"
-          href="https://forms.gle/LrX3RffLFpdqcTLh8"
+          :href="formURL"
           background-color="var(--white)"
           color="var(--black)"
           size="l"
@@ -68,24 +68,19 @@
   </main>
 </template>
 
-<script></script>
+<script>
+import { FORM_URL } from '~/common/constants'
+
+export default {
+  computed: {
+    formURL() {
+      return FORM_URL
+    },
+  },
+}
+</script>
 
 <style lang="stylus" scoped>
-.mt-10
-  margin-top var(--spacing-10)
-
-.mt-9
-  margin-top var(--spacing-9)
-
-.mt-7
-  margin-top var(--spacing-7)
-
-.mt-5
-  margin-top var(--spacing-5)
-
-.text-center
-  text-align center
-
 // Graphics
 .layer
   display flex
