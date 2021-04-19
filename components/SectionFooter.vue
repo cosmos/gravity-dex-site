@@ -6,7 +6,7 @@
           <logo-gravity-dex-wordmark class="logo__cosmos" />
           <span class="sr-only">Cosmos</span>
         </nuxt-link>
-        <tm-link href="https://v1.cosmos.network/privacy" class="link-item"
+        <tm-link href="https://forms.gle/LrX3RffLFpdqcTLh8" class="link-item"
           >Register</tm-link
         >
         <tm-link href="https://v1.cosmos.network/privacy" class="link-item"

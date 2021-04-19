@@ -12,7 +12,7 @@
       <div class="btn-group">
         <tm-button
           to-link="external"
-          href="https://medium.com/tendermint/gravity-dex-testnet-competition-mainnet-launch-on-cosmos-imminent-b95ef5329d06"
+          href="https://forms.gle/LrX3RffLFpdqcTLh8"
           size="l"
           variant="contained"
           class="btn"
