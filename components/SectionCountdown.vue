@@ -1,7 +1,7 @@
 <template>
   <div v-if="toTimezone(endDate, endTime) >= moment()">
     <div class="overline tm-rf0 tm-medium tm-lh-title tm-overline">
-      Registration in
+      Time remaining to register
     </div>
     <tm-countdown
       :now="currentTime"

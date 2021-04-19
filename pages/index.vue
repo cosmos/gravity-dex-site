@@ -21,7 +21,32 @@
     </div>
 
     <div class="tm-section tm-wrapper tm-container">
-      <section-countdown class="center" />
+      <div class="tm-wrapper center text-center">
+        <div
+          class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
+        >
+          Register now
+        </div>
+        <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5">
+          Join the<br />Future of DeFi
+        </h1>
+        <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
+          Register by April 30 in order to participate in the Gravity DEX
+          testnet competition.
+        </p>
+      </div>
+      <section-countdown class="center mt-9" />
+      <div class="center mt-9">
+        <tm-button background-color="var(--white)" color="var(--black)" size="l"
+          >Register</tm-button
+        >
+        <p class="subtitle tm-rf-1 tm-lh-title mt-7">
+          Registration ends April 30.
+        </p>
+      </div>
+      <div class="mt-10">
+        <section-cta />
+      </div>
     </div>
 
     <div class="tm-section tm-container">
@@ -31,7 +56,7 @@
         >
           Faq
         </div>
-        <h1 class="title tm-rf4 tm-bold tm-lh-title tm-title">
+        <h1 class="title tm-rf4 tm-bold tm-lh-title tm-title mt-5">
           Frequently asked questions
         </h1>
       </div>
@@ -47,6 +72,18 @@
 <style lang="stylus" scoped>
 .mt-10
   margin-top var(--spacing-10)
+
+.mt-9
+  margin-top var(--spacing-9)
+
+.mt-7
+  margin-top var(--spacing-7)
+
+.mt-5
+  margin-top var(--spacing-5)
+
+.text-center
+  text-align center
 
 // Graphics
 .layer
@@ -94,10 +131,6 @@
     height 78rem
     max-height 90rem
     z-index 4
-
-// Hero
-.title
-  margin-top var(--spacing-5)
 
 @media $breakpoint-xsmall-only
   .star
