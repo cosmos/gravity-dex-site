@@ -46,6 +46,24 @@ export default {
   center()
   width 100% // safari
 
+.text-center
+  text-align center
+
+.mt-10
+  margin-top var(--spacing-10)
+
+.mt-9
+  margin-top var(--spacing-9)
+
+.mt-8
+  margin-top var(--spacing-8)
+
+.mt-7
+  margin-top var(--spacing-7)
+
+.mt-5
+  margin-top var(--spacing-5)
+
 @media $breakpoint-large-max
   .mobile-menu-open
     #content
