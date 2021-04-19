@@ -1,41 +1,20 @@
 <template>
   <footer class="footer tm-wrapper tm-container tm-grid-base">
-    <!-- <nav class="nav" role="navigation">
-      <div class="menu">
-        <div v-for="item in menu" :key="item.title" class="nav-item">
-          <div class="nav-item__title tm-rf0 tm-lh-title tm-medium tm-title">
-            {{ item.title }}
-          </div>
-          <div
-            v-for="child in item.children"
-            :key="child.title"
-            class="nav-item__child tm-rf0 tm-lh-copy"
-          >
-            <nuxt-link v-if="isInternal(child.href)" tag="a" :to="child.href">{{
-              child.title
-            }}</nuxt-link>
-            <tm-link v-else :href="child.href" class="tm-link-external">{{
-              child.title
-            }}</tm-link>
-          </div>
-        </div>
-      </div>
-    </nav> -->
     <div class="row">
       <nav ref="links" class="nav-bottom tm-rf-1 tm-lh-copy" role="navigation">
         <nuxt-link to="/" class="logo">
           <logo-gravity-dex-wordmark class="logo__cosmos" />
           <span class="sr-only">Cosmos</span>
         </nuxt-link>
-        <tm-link href="https://v1.cosmos.network/privacy" class="privacy"
+        <tm-link href="https://v1.cosmos.network/privacy" class="link-item"
           >Register</tm-link
         >
-        <tm-link href="https://v1.cosmos.network/privacy" class="privacy"
+        <tm-link href="https://v1.cosmos.network/privacy" class="link-item"
           >Privacy</tm-link
         >
         <tm-link
           href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/"
-          class="privacy"
+          class="link-item"
           >Code of conduct</tm-link
         >
       </nav>
@@ -300,14 +279,14 @@ export default {
   color inherit
   transition transform .4s $ease-out, opacity .4s $ease-out, color .4s $ease-out, visibility .4s 0s
   padding-right 1.5rem
+  border-right 1px solid var(--white-100)
   svg
     width auto
   &__cosmos
     height 1.125rem
 
-.privacy
+.link-item
   padding-left 1.5rem
-  border-left 1px solid var(--white-100)
 
 .nav-bottom
   display flex
