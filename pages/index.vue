@@ -35,7 +35,12 @@
       </div>
       <section-countdown class="center mt-9" />
       <div class="center mt-9">
-        <tm-button background-color="var(--white)" color="var(--black)" size="l"
+        <tm-button
+          to-link="external"
+          href="https://forms.gle/LrX3RffLFpdqcTLh8"
+          background-color="var(--white)"
+          color="var(--black)"
+          size="l"
           >Register</tm-button
         >
         <p class="subtitle tm-rf-1 tm-lh-title mt-7">
