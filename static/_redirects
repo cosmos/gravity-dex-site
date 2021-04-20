@@ -1,0 +1,5 @@
+# Redirect URLs (FROM, TO, 301!)
+/register /signup
+
+# Redirect URLs to external websites 301!
+/forms https://forms.gle/LrX3RffLFpdqcTLh8
