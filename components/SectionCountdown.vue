@@ -1,5 +1,8 @@
 <template>
-  <div v-if="toTimezone(endDate, endTime) >= moment()">
+  <div
+    v-if="toTimezone(endDate, endTime) >= moment()"
+    class="section-countdown"
+  >
     <div class="overline tm-rf0 tm-lh-title">Time remaining to register</div>
     <tm-countdown
       :now="currentTime"
@@ -55,6 +58,10 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.section-countdown
+  position relative
+  z-index 50
+
 .time
   margin-top var(--spacing-3)
 

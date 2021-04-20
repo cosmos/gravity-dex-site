@@ -1,21 +1,36 @@
 <template>
   <main>
-    <!-- <div class="layer">
-      <img src="~/assets/images/bg/blob.png" class="blob" />
-      <img src="~/assets/images/bg/star.png" class="star" />
-      <img src="~/assets/images/bg/glow.png" class="glow" />
-
-      <div class="graphics">
-        <graphics-hero class="graphics__item" />
-      </div>
-    </div> -->
-
     <section-hero />
 
     <div class="tm-section tm-wrapper tm-container">
-      <div class="section-competition tm-grid-base">
+      <div class="section-about tm-grid-base">
         <div class="left">
-          <!-- <graphics-sun-coin class="graphics__item" /> -->
+          <div
+            class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
+          >
+            What is it?
+          </div>
+          <h1 class="title tm-rf5 tm-bold tm-lh-title tm-title mt-5">
+            The Most Advanced Interchain DEX
+          </h1>
+          <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
+            Gravity uses the Inter-Blockchain Communication (IBC) protocol to
+            enable swaps and pools of digital assets between any two blockchains
+            within the Cosmos ecosystem or beyond. Gravity also achieves
+            superior efficiency compared to other AMMs due to its groundbreaking
+            Equivalent Swap Price Model.
+          </p>
+        </div>
+        <div class="right">
+          <!-- graphics -->
+        </div>
+      </div>
+    </div>
+
+    <div class="tm-section tm-wrapper tm-container">
+      <div class="section-competition tm-grid-base">
+        <div class="left graphics">
+          <graphics-sun-coin class="graphics__item" />
         </div>
         <div class="right">
           <div
@@ -59,7 +74,7 @@
         <div class="right">
           <div class="card">
             <div class="card-inner">
-              <div class="graphics">
+              <div class="card-graphics">
                 <graphics-coin-stack class="coin-stack" />
               </div>
               <div class="text">
@@ -96,7 +111,10 @@
       </div>
     </div>
 
-    <div class="tm-section tm-wrapper tm-container">
+    <div class="section-register tm-section tm-wrapper tm-container">
+      <div class="register-graphics">
+        <graphics-register-hero class="graphics__item" />
+      </div>
       <div class="tm-wrapper center text-center">
         <div
           class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
@@ -159,54 +177,36 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-// .layer
-//   display flex
-//   align-items center
-//   justify-content center
-//   position absolute
-//   top 0
-//   left 0
-//   right 0
-//   bottom 0
-//   overflow hidden
-//   min-height 79rem
+.graphics
+  position relative
+  width 100%
 
-// .blob
-//   position absolute
-//   top 0
-//   left 10%
-//   width 100%
-//   z-index 4
-
-// .star
-//   position absolute
-//   top 0
-//   left 10%
-//   height 100%
-//   width 100%
-//   z-index 4
-
-// .glow
-//   position absolute
-//   top 0
-//   left 10%
-//   height 100%
-//   width 100%
-//   z-index 3
-
-// .graphics
-//   position relative
-
-//   &__item
-//     position absolute
-//     top -47rem
-//     right -83rem
-//     height 78rem
-//     max-height 90rem
-//     z-index 4
+.graphics__item
+  position absolute
+  height auto
+  bottom 0
+  left -18%
+  width 365%
+  margin-bottom -135%
+  margin-left -165%
+  max-width 144rem
+  min-width 40rem
 
 .subtitle
   color var(--white-800)
+  position relative
+  z-index 50
+
+// About
+.section-about
+  .left
+  .right
+    grid-column 1/-1
+
+.section-about
+  margin-bottom var(--spacing-11)
+  position relative
+  z-index 50
 
 // Competition
 .section-competition
@@ -214,8 +214,9 @@ export default {
   .right
   .footer
     grid-column 1/-1
+    z-index 50
 
-// PRIZE
+// Prize
 .section-prize
   .left
   .right
@@ -223,6 +224,29 @@ export default {
 
 .section-prize .right
   margin-top var(--spacing-9)
+
+// Register
+.section-register
+  position relative
+  z-index 50
+
+.register-graphics
+  position relative
+  padding-top var(--spacing-12)
+  overflow visible
+  z-index 0
+
+  .graphics__item
+    position absolute
+    height auto
+    bottom 0
+    left auto
+    right -98%
+    width 150%
+    margin-bottom -96%
+    margin-left -135%
+    max-width 144rem
+    min-width 40rem
 
 .card
   display flex
@@ -237,53 +261,18 @@ export default {
     background var(--fg)
     border-radius $border-radius-6
 
-.graphics
-  position relative
-  // margin-top -10%
-  // margin-left -15%
+@media $breakpoint-xsmall-only
+  .graphics
+    margin-top 80%
+    margin-left 60%
 
-// .graphics__item
-//   position absolute
-//   width 100%
-//   top -69%
-//   left -42%
-
-// .card__graphics
-//   position relative
-//   width 100%
-//   max-width 22rem
-
-// @media $breakpoint-xsmall-only
-//   .star
-//     display none
-
-//   .graphics__item
-//     top -44rem
-//     right -62rem
-//     max-height 55rem
-
-// @media $breakpoint-small-only
-//   .graphics__item
-//     top -67rem
-//     right -67rem
-//     max-height 80rem
-
-// @media $breakpoint-small
-//   .star
-//     display none
-
-// @media $breakpoint-medium-only
-//   .graphics__item
-//     top -67rem
-//     right -67rem
-//     max-height 80rem
+  .graphics__item
+    left -68%
 
 @media $breakpoint-xl
-  // .layer
-  //   min-height 70rem
-
-  // .star
-  //   display unset
+  .section-about
+    .left
+      grid-column 2/span 7
 
   .section-competition
     .left

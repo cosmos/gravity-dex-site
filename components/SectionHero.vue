@@ -1,13 +1,14 @@
 <template>
   <div class="section-hero">
+    <!-- <img src="~/assets/images/bg/green-blob.png" class="blob" /> -->
     <div class="tm-wrapper tm-section tm-container">
       <h1 class="title tm-rf6 tm-rf7-m-up tm-bold tm-lh-title tm-title">
         Bringing DeFi<br />
         to Cosmos
       </h1>
       <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
-        The Gravity DEX testnet competition is now live with a ~$200,000 prize
-        pool in ATOM and ten other Cosmos assets.
+        The Gravity DEX testnet competition starts May 4 with a $200,000 prize
+        pool in ATOMs and 10 additional Cosmos assets.
       </p>
       <div class="btn-group">
         <tm-button
@@ -44,9 +45,13 @@ export default {
   position relative
   z-index 200
 
+.blob
+  position absolute
+  top 0
+  left 0
+
 .tm-wrapper
   width 100%
-  padding-bottom 0
   display flex
   flex-direction column
   align-items center
