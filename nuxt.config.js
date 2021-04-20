@@ -5,6 +5,10 @@ export default {
    */
   target: 'static',
   ssr: true,
+  generate: {
+    fallback: false,
+    routes: ['/', '404'],
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     htmlAttrs: {
