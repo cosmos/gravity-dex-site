@@ -21,7 +21,7 @@
     }
   },
   "dependencies": {
-    "core-js": "^3.10.1",
+    "core-js": "^3.10.2",
     "moment-timezone": "^0.5.33",
     "nuxt": "^2.15.3",
     "pug": "^3.0.2",
