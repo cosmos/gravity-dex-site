@@ -55,8 +55,14 @@ export default {
 .mt-9
   margin-top var(--spacing-9)
 
+.mb-9
+  margin-bottom var(--spacing-9)
+
 .mt-8
   margin-top var(--spacing-8)
+
+.mb-8
+  margin-bottom var(--spacing-8)
 
 .mt-7
   margin-top var(--spacing-7)
