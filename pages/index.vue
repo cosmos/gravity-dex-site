@@ -43,10 +43,10 @@
           </h1>
           <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
             Participants compete for the top score, which is based on a
-            combination of their activity and profits. The top 1/3rd will
-            receive prizes proportional to their leaderboard position.
-            Participants must execute deposits, withdrawals, and swaps across at
-            least 3 pools to be eligible.
+            combination of their activity and profits. The top ⅓ will receive
+            prizes proportional to their leaderboard position. Participants must
+            execute deposits, withdrawals, and swaps across at least 3 pools to
+            be eligible.
           </p>
         </div>
         <div class="footer mt-10">
