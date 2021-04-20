@@ -13,6 +13,34 @@
     <section-hero />
 
     <div class="tm-section tm-wrapper tm-container">
+      <div class="section-competition tm-grid-base">
+        <div class="left">
+          <!-- <graphics-sun-coin class="graphics__item" /> -->
+        </div>
+        <div class="right">
+          <div
+            class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
+          >
+            Testnet competition
+          </div>
+          <h1 class="title tm-rf5 tm-bold tm-lh-title tm-title mt-5">
+            Let the best<br />traders win
+          </h1>
+          <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
+            Participants compete for the top score, which is based on a
+            combination of their activity and profits. The top 1/3rd will
+            receive prizes proportional to their leaderboard position.
+            Participants must execute deposits, withdrawals, and swaps across at
+            least 3 pools to be eligible.
+          </p>
+        </div>
+        <div class="footer mt-10">
+          <section-date />
+        </div>
+      </div>
+    </div>
+
+    <div class="tm-section tm-wrapper tm-container">
       <div class="section-prize tm-grid-base">
         <div class="left">
           <div
@@ -177,12 +205,17 @@ export default {
 //     max-height 90rem
 //     z-index 4
 
-.overline
-  color var(--white-500)
-
 .subtitle
   color var(--white-800)
 
+// Competition
+.section-competition
+  .left
+  .right
+  .footer
+    grid-column 1/-1
+
+// PRIZE
 .section-prize
   .left
   .right
@@ -208,6 +241,12 @@ export default {
   position relative
   // margin-top -10%
   // margin-left -15%
+
+// .graphics__item
+//   position absolute
+//   width 100%
+//   top -69%
+//   left -42%
 
 // .card__graphics
 //   position relative
@@ -245,6 +284,14 @@ export default {
 
   // .star
   //   display unset
+
+  .section-competition
+    .left
+      grid-column 1/span 4
+    .right
+      grid-column 6/span 7
+    .footer
+      grid-column 4/span 9
 
   .section-prize
     .left
