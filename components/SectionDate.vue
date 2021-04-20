@@ -8,10 +8,10 @@
       <div class="event tm-rf-0 tm-lh-title">
         {{ item.event }}
       </div>
-      <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
+      <div class="title tm-rf3 tm-bold tm-lh-title tm-title">
         {{ item.day }}
       </div>
-      <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
+      <div class="title tm-rf0 tm-bold tm-lh-title tm-title">
         {{ item.month }}
       </div>
     </div>
@@ -78,15 +78,11 @@ export default {
   right 0
   angle-accent(se)
 
-.card-item .title
-  margin-top var(--spacing-3)
-
 @media $breakpoint-medium
   .cards-container
     grid-template-columns repeat(2, 1fr)
 
 @media $breakpoint-large
-  // Intro
   .cards-container
     grid-template-columns repeat(3, 1fr)
 </style>

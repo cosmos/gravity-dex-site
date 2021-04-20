@@ -1,9 +1,9 @@
 <template>
   <main>
-    <section-hero />
+    <section-hero class="z-text" />
 
     <div class="tm-section tm-wrapper tm-container">
-      <div class="section-about tm-grid-base">
+      <div class="section-about tm-grid-base z-text">
         <div class="left">
           <div
             class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
@@ -21,16 +21,13 @@
             Equivalent Swap Price Model.
           </p>
         </div>
-        <div class="right">
-          <!-- graphics -->
-        </div>
       </div>
     </div>
 
     <div class="tm-section tm-wrapper tm-container">
       <div class="section-competition tm-grid-base">
         <div class="left graphics">
-          <graphics-sun-coin class="graphics__item" />
+          <graphics-sun-coin class="graphics__item sun" />
         </div>
         <div class="right">
           <div
@@ -97,12 +94,14 @@
             >
               Prize pool
             </div>
-            <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
-              <!-- TODO -->
-              <tm-link href="http://gravitydex.io">
-                Bug bounties &#8599;
+            <div class="mt-5 z-text">
+              <tm-link
+                href="http://gravitydex.io"
+                class="tm-link-external tm-rf2 tm-bold tm-lh-title"
+              >
+                Bug bounties
               </tm-link>
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -113,7 +112,7 @@
 
     <div class="section-register tm-section tm-wrapper tm-container">
       <div class="register-graphics">
-        <graphics-register-hero class="graphics__item" />
+        <graphics-register-hero class="graphics__item register" />
       </div>
       <div class="tm-wrapper center text-center">
         <div
@@ -177,13 +176,24 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+// Global
+.subtitle
+  color var(--white-800)
+  position relative
+  z-index 50
+
+// Graphics
 .graphics
   position relative
   width 100%
+  z-index -1
 
 .graphics__item
   position absolute
   height auto
+  z-index -1
+
+.sun
   bottom 0
   left -18%
   width 365%
@@ -192,21 +202,26 @@ export default {
   max-width 144rem
   min-width 40rem
 
-.subtitle
-  color var(--white-800)
-  position relative
-  z-index 50
+.register
+  bottom 0
+  left auto
+  right -98%
+  width 150%
+  margin-bottom -96%
+  margin-left -135%
+  max-width 144rem
+  min-width 40rem
+  z-index -1
 
 // About
 .section-about
   .left
-  .right
     grid-column 1/-1
 
 .section-about
   margin-bottom var(--spacing-11)
+  margin-top 15rem
   position relative
-  z-index 50
 
 // Competition
 .section-competition
@@ -234,19 +249,7 @@ export default {
   position relative
   padding-top var(--spacing-12)
   overflow visible
-  z-index 0
-
-  .graphics__item
-    position absolute
-    height auto
-    bottom 0
-    left auto
-    right -98%
-    width 150%
-    margin-bottom -96%
-    margin-left -135%
-    max-width 144rem
-    min-width 40rem
+  z-index -1
 
 .card
   display flex
@@ -269,12 +272,43 @@ export default {
   .graphics__item
     left -68%
 
+  .section-about
+    margin-top 0
+
+  .card-inner
+    flex-direction column
+    align-items flex-start
+
+@media $breakpoint-small
+  .section-competition
+    padding-top 36rem
+
+@media $breakpoint-medium
+  .section-prize .right
+    grid-column span 6
+
+  .section-about
+    margin-top 19rem
+
+@media $breakpoint-large
+  .section-about
+    margin-top -3rem
+
+  .section-competition
+    padding-top 36rem
+
+  .sun
+    margin-bottom -115%
+    margin-left -125%
+
 @media $breakpoint-xl
   .section-about
+    margin-top -33rem
     .left
       grid-column 2/span 7
 
   .section-competition
+    padding-top 0
     .left
       grid-column 1/span 4
     .right
@@ -286,8 +320,5 @@ export default {
     .left
       grid-column 2/span 5
     .right
-      grid-column 7/span 5
-
-  .section-prize .right
-    margin-top 0
+      grid-column 7/span 6
 </style>

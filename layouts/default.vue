@@ -46,8 +46,16 @@ export default {
   center()
   width 100% // safari
 
+// TODO: move to utilities css
 .text-center
   text-align center
+
+// z-index for text (highest)
+.z-text
+  z-index $z-index-text
+
+.z-graphics
+  z-index $z-index-graphics
 
 .mt-10
   margin-top var(--spacing-10)
@@ -69,9 +77,4 @@ export default {
 
 .mt-5
   margin-top var(--spacing-5)
-
-@media $breakpoint-large-max
-  .mobile-menu-open
-    #content
-      display none
 </style>

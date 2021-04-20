@@ -1,5 +1,5 @@
 <template>
-  <div class="logos-list">
+  <div class="logos-list z-text">
     <tm-link v-for="item in list" :key="item.text" :href="item.url">
       <tm-tooltip :text="`${item.text} ↗`" position="top-center">
         <img
@@ -79,6 +79,7 @@ export default {
   column-gap var(--spacing-7)
   row-gap var(--spacing-6)
   align-items center
+  position relative
 
 .logos-list > a
   opacity 0.35

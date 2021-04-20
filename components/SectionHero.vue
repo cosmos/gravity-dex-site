@@ -1,6 +1,5 @@
 <template>
   <div class="section-hero">
-    <!-- <img src="~/assets/images/bg/green-blob.png" class="blob" /> -->
     <div class="tm-wrapper tm-section tm-container">
       <h1 class="title tm-rf6 tm-rf7-m-up tm-bold tm-lh-title tm-title">
         Bringing DeFi<br />
@@ -24,6 +23,10 @@
         Registration ends April 30.
       </p>
     </div>
+    <div class="hero-graphics z-graphics">
+      <img src="~/assets/images/bg/green-blob.png" class="blob" />
+      <graphics-hero />
+    </div>
   </div>
 </template>
 
@@ -40,15 +43,18 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.hero-graphics
+  position relative
+  overflow visible
+
 .section-hero
   text-align center
   position relative
-  z-index 200
 
 .blob
   position absolute
-  top 0
-  left 0
+  top -160%
+  left -45%
 
 .tm-wrapper
   width 100%
@@ -68,4 +74,12 @@ export default {
 @media $breakpoint-small
   .btn-group
     display block
+
+@media $breakpoint-xsmall-only
+  .blob
+    display none // todo
+
+  .hero-graphics
+    padding-top var(--spacing-12)
+    padding-bottom var(--spacing-13)
 </style>
