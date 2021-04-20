@@ -66,6 +66,11 @@ export default {
           text: 'Agoric',
           img: 'agoric',
         },
+        {
+          url: 'https://cybercongress.ai',
+          text: 'Cyber',
+          img: 'cyber',
+        },
       ],
     }
   },
