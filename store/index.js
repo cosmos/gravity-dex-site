@@ -1,7 +1,7 @@
 export const state = () => ({
   countdown: {
     now: Math.trunc(new Date(new Date().toUTCString()).getTime() / 1000),
-    // registration date time in UTC
+    // UTC time
     date: '2021-04-30',
     time: '00:00',
   },
