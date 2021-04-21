@@ -130,7 +130,7 @@ export default {
 
 <style lang="stylus" scoped>
 .footer
-  padding-top var(--spacing-10)
+  // padding-top var(--spacing-10)
   padding-bottom var(--spacing-9)
 
   > *

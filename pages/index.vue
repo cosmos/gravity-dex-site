@@ -89,7 +89,7 @@
                 <p class="subtitle tm-rf1 tm-lh-copy tm-measure">in ATOM</p>
               </div>
             </div>
-            <div
+            <!-- <div
               class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted mt-8"
             >
               Prize pool
@@ -101,7 +101,7 @@
               >
                 Bug bounties
               </tm-link>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -142,12 +142,12 @@
           Registration ends April 30.
         </p>
       </div>
-      <div class="mt-10">
+      <!-- <div class="mt-10">
         <section-cta />
-      </div>
+      </div> -->
     </div>
 
-    <div class="tm-section tm-container">
+    <!-- <div class="tm-section tm-container">
       <div class="tm-wrapper center">
         <div
           class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
@@ -159,7 +159,7 @@
         </h1>
       </div>
       <section-questions class="mt-10" />
-    </div>
+    </div> -->
   </main>
 </template>
 
