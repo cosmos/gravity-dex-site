@@ -1,1 +1,1 @@
-export const FORM_URL = 'https://forms.gle/LrX3RffLFpdqcTLh8'
+export const FORM_URL = 'https://airtable.com/shrnBmHrFYOJaCgNm'
