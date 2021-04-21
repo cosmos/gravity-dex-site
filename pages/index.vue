@@ -280,7 +280,7 @@ export default {
     margin-left 60%
 
   .graphics__item
-    left -68%
+    left 170%
 
   .section-about
     margin-top 0
