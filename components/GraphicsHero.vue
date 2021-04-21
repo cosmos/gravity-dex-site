@@ -584,7 +584,7 @@
   height auto
   max-width 360%
   position relative
-  margin-top -173%
+  margin-top -170%
   margin-left -112%
 
 .canvas
