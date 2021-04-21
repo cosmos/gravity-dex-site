@@ -1,305 +1,324 @@
 <template>
   <main>
-    <div class="layer">
-      <img src="~/assets/images/bg/blob.png" class="blob" />
-      <img src="~/assets/images/bg/star.png" class="star" />
-      <img src="~/assets/images/bg/glow.png" class="glow" />
+    <section-hero class="z-text" />
 
-      <div class="graphics">
-        <graphics-hero class="graphics__item" />
-      </div>
-    </div>
-
-    <div class="section-hero">
-      <div class="tm-container tm-wrapper tm-grid-base">
-        <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title">
-          Bringing DeFi<br />
-          to Cosmos
-        </h1>
-        <div class="top">
-          <p class="intro tm-rf0 tm-lh-copy">
-            The Gravity DEX testnet competition starts soon with a ~$200,000
-            prize pool in ATOM and 10 other Cosmos tokens.
+    <div class="tm-section tm-wrapper tm-container">
+      <div class="section-about tm-grid-base z-text">
+        <div class="left">
+          <div
+            class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
+          >
+            What is it?
+          </div>
+          <h1 class="title tm-rf5 tm-bold tm-lh-title tm-title mt-5">
+            The Most Advanced Interchain DEX
+          </h1>
+          <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
+            Gravity uses the Inter-Blockchain Communication (IBC) protocol to
+            enable swaps and pools of digital assets between any two blockchains
+            within the Cosmos ecosystem or beyond. Gravity also achieves
+            superior efficiency compared to other AMMs due to its groundbreaking
+            Equivalent Swap Price Model.
           </p>
-          <div class="btn-group">
-            <tm-button
-              to-link="external"
-              href="https://medium.com/tendermint/gravity-dex-testnet-competition-mainnet-launch-on-cosmos-imminent-b95ef5329d06"
-              size="l"
-              variant="text"
-              class="btn"
-              >Learn more<span class="icon__right">&#8599;</span></tm-button
-            >
-          </div>
-        </div>
-        <div class="split tm-grid-base">
-          <div v-if="toTimezone(endDate, endTime) >= moment()" class="left">
-            <div class="overline tm-rf0 tm-medium tm-lh-title tm-overline">
-              Registration in
-            </div>
-            <tm-countdown
-              :now="currentTime"
-              :end="countdownTimer(endDate, endTime)"
-              class="time tm-rf3 tm-bold tm-lh-copy tm-code"
-            />
-            <div class="date tm-rf0 tm-medium tm-lh-title tm-overline">
-              April 21
-            </div>
-          </div>
-          <div class="right">
-            <section-form />
-          </div>
-        </div>
-        <div class="footer">
-          <div class="overline tm-rf-1 tm-medium tm-lh-title tm-overline">
-            Sponsored coins
-          </div>
-          <div class="logos-list">
-            <img src="~static/logos/cosmos-hub.svg" alt="Cosmos Hub logo" />
-            <img src="~static/logos/terra-money.svg" alt="Terra Money logo" />
-            <img
-              src="~static/logos/regen-network.svg"
-              alt="Regen Network logo"
-            />
-            <img src="~static/logos/bitsong.svg" alt="Bitsong logo" />
-            <img src="~static/logos/sentinel.svg" alt="Sentinel logo" />
-            <img src="~static/logos/persistence.svg" alt="Persistence logo" />
-            <img src="~static/logos/akash.svg" alt="Akash logo" />
-            <img src="~static/logos/e-money.svg" alt="E money logo" />
-            <img src="~static/logos/irisnet.svg" alt="Irisnet logo" />
-            <img src="~static/logos/agoric.svg" alt="Agoric logo" />
-          </div>
         </div>
       </div>
     </div>
+
+    <div class="tm-section tm-wrapper tm-container">
+      <div class="section-competition tm-grid-base">
+        <div class="left graphics">
+          <graphics-sun-coin class="graphics__item sun" />
+        </div>
+        <div class="right">
+          <div
+            class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
+          >
+            Testnet competition
+          </div>
+          <h1 class="title tm-rf5 tm-bold tm-lh-title tm-title mt-5">
+            Let the best<br />traders win
+          </h1>
+          <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
+            Participants compete for the top score, which is based on a
+            combination of their activity and profits. The top ⅓ will receive
+            prizes proportional to their leaderboard position. Participants must
+            execute deposits, withdrawals, and swaps across at least 3 pools to
+            be eligible.
+          </p>
+        </div>
+        <div class="footer mt-10">
+          <section-date />
+        </div>
+      </div>
+    </div>
+
+    <div class="tm-section tm-wrapper tm-container">
+      <div class="section-prize tm-grid-base">
+        <div class="left">
+          <div
+            class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
+          >
+            Prize pool
+          </div>
+          <h1 class="title tm-rf5 tm-bold tm-lh-title tm-title mt-5">
+            $200,000<br />At Stake
+          </h1>
+          <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
+            The Gravity DEX testnet competition prize pool totalling more than
+            $200,000 in ATOMs and 10 sponsored tokens from the Cosmos ecosystem.
+          </p>
+        </div>
+        <div class="right">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-graphics">
+                <graphics-coin-stack class="coin-stack" />
+              </div>
+              <div class="text">
+                <div
+                  class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
+                >
+                  Main prize
+                </div>
+                <h1 class="title tm-rf4 tm-bold tm-lh-title tm-title mt-5">
+                  $5,000
+                  <span class="unit tm-rf1 tm-bold tm-lh-title tm-title"
+                    >USD</span
+                  >
+                </h1>
+                <p class="subtitle tm-rf1 tm-lh-copy tm-measure">in ATOM</p>
+              </div>
+            </div>
+            <!-- <div
+              class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted mt-8"
+            >
+              Prize pool
+            </div>
+            <div class="mt-5 z-text">
+              <tm-link
+                href="http://gravitydex.io"
+                class="tm-link-external tm-rf2 tm-bold tm-lh-title"
+              >
+                Bug bounties
+              </tm-link>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="mt-10">
+        <section-sponsored-coins />
+      </div>
+    </div>
+
+    <div class="section-register tm-section tm-wrapper tm-container">
+      <div class="register-graphics">
+        <graphics-register-hero class="graphics__item register" />
+      </div>
+      <div class="tm-wrapper center text-center">
+        <div
+          class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
+        >
+          Register now
+        </div>
+        <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5">
+          Join the<br />Future of DeFi
+        </h1>
+        <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
+          Register by April 30 in order to participate in the Gravity DEX
+          testnet competition.
+        </p>
+      </div>
+      <section-countdown class="center mt-9" />
+      <div class="center mt-9">
+        <tm-button
+          to-link="external"
+          :href="formURL"
+          background-color="var(--white)"
+          color="var(--black)"
+          size="l"
+          >Register</tm-button
+        >
+        <p class="subtitle tm-rf-1 tm-lh-title mt-7">
+          Registration ends April 30.
+        </p>
+      </div>
+      <!-- <div class="mt-10">
+        <section-cta />
+      </div> -->
+    </div>
+
+    <!-- <div class="tm-section tm-container">
+      <div class="tm-wrapper center">
+        <div
+          class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
+        >
+          Faq
+        </div>
+        <h1 class="title tm-rf4 tm-bold tm-lh-title tm-title mt-5">
+          Frequently asked questions
+        </h1>
+      </div>
+      <section-questions class="mt-10" />
+    </div> -->
   </main>
 </template>
 
 <script>
-import moment from 'moment-timezone'
+import { FORM_URL } from '~/common/constants'
 
 export default {
-  data() {
-    return {
-      moment,
-    }
-  },
   computed: {
-    currentTime() {
-      return this.$store.state.countdown.now
-    },
-    endDate() {
-      return this.$store.state.countdown.date
-    },
-    endTime() {
-      return this.$store.state.countdown.time
-    },
-  },
-  mounted() {
-    window.setInterval(() => {
-      this.$store.commit('updateNow')
-    }, 1000)
-  },
-  methods: {
-    countdownTimer(date, time) {
-      return moment.tz(`${date} ${time}`, 'UTC').format()
-    },
-    toTimezone(date, time) {
-      return (
-        moment
-          // set base time with UTC
-          // get timezone with i18n API - Intl.DateTimeFormat().resolvedOptions().timeZone
-          .tz(`${date} ${time}`, 'UTC')
-          // use client's locale time zone
-          .tz(moment.tz.guess())
-      )
+    formURL() {
+      return FORM_URL
     },
   },
 }
 </script>
 
 <style lang="stylus" scoped>
+// Global
+.subtitle
+  color var(--white-800)
+  position relative
+  z-index 50
+
 // Graphics
-.layer
-  display flex
-  align-items center
-  justify-content center
-  position absolute
-  top 0
-  left 0
-  right 0
-  bottom 0
-  overflow hidden
-  min-height 79rem
-
-.blob
-  position absolute
-  top 0
-  left 10%
-  width 100%
-  z-index 4
-
-.star
-  position absolute
-  top 0
-  left 10%
-  height 100%
-  width 100%
-  z-index 4
-
-.glow
-  position absolute
-  top 0
-  left 10%
-  height 100%
-  width 100%
-  z-index 3
-
 .graphics
   position relative
+  width 100%
+  z-index -1
 
-  &__item
-    position absolute
-    top -47rem
-    right -83rem
-    height 78rem
-    max-height 90rem
-    z-index 4
+.graphics__item
+  position absolute
+  height auto
+  z-index -1
 
-// Hero
-.section-hero
+.sun
+  bottom 0
+  left -18%
+  width 365%
+  margin-bottom -135%
+  margin-left -165%
+  max-width 144rem
+  min-width 40rem
+
+.register
+  bottom 0
+  left auto
+  right -98%
+  width 150%
+  margin-bottom -96%
+  margin-left -135%
+  max-width 144rem
+  min-width 40rem
+  z-index -1
+
+// About
+.section-about
+  .left
+    grid-column 1/-1
+
+.section-about
+  margin-bottom var(--spacing-11)
+  margin-top 15rem
   position relative
-  z-index 200
-  margin-top var(--spacing-8)
 
-.title
-.top
-.split
-.left
-.right
-.footer
-  grid-column 1/-1
+// Competition
+.section-competition
+  .left
+  .right
+  .footer
+    grid-column 1/-1
+    z-index 50
 
-.top
-  margin-top var(--spacing-6)
+// Prize
+.section-prize
+  .left
+  .right
+    grid-column 1/-1
 
-.split
-  margin-top 0
-
-.left
-  grid-row 1
-  margin-top var(--spacing-7)
-  padding-bottom var(--spacing-7)
-  border-bottom 1px solid var(--white-100)
-
-.right
-  grid-row 2
-  margin-top var(--spacing-7)
-
-.intro
-  max-width 30em
-  color var(--white-500)
-  font-feature-settings 'liga' on, 'calt' on, 'zero' on // safari
-
-.time
-  margin-top var(--spacing-3)
-
-.date
-  margin-top var(--spacing-3)
-  color var(--white-500)
-
-.btn-group
-  margin-top var(--spacing-3)
-
-.footer
+.section-prize .right
   margin-top var(--spacing-9)
 
-.logos-list
-  display grid
-  grid-template-columns repeat(2, 1fr)
-  column-gap var(--spacing-7)
-  row-gap var(--spacing-6)
-  align-items center
-  margin-top var(--spacing-5)
-  margin-bottom var(--spacing-11)
+// Register
+.section-register
+  position relative
+  z-index 50
 
-.logos-list > img
-  opacity 0.35
+.register-graphics
+  position relative
+  padding-top var(--spacing-12)
+  overflow visible
+  z-index -1
+
+.card
+  display flex
+  flex-direction column
+
+  &-inner
+    display flex
+    flex-direction row
+    align-items center
+    justify-content space-between
+    padding var(--spacing-7)
+    background var(--fg)
+    border-radius $border-radius-6
 
 @media $breakpoint-xsmall-only
-  .star
-    display none
-
-  .left
-    border 0
+  .graphics
+    margin-top 80%
+    margin-left 60%
 
   .graphics__item
-    top -44rem
-    right -62rem
-    max-height 55rem
+    left -68%
 
-  .logos-list
-    row-gap var(--spacing-7)
+  .section-about
+    margin-top 0
 
-@media $breakpoint-small-only
-  .graphics__item
-    top -67rem
-    right -67rem
-    max-height 80rem
+  .card-inner
+    flex-direction column
+    align-items flex-start
 
 @media $breakpoint-small
-  .btn-group
-    display block
-
-  .star
-    display none
-
-@media $breakpoint-medium-only
-  .graphics__item
-    top -67rem
-    right -67rem
-    max-height 80rem
+  .section-competition
+    padding-top 36rem
 
 @media $breakpoint-medium
-  .left
-    border 0
+  .section-prize .right
+    grid-column span 6
+
+  .section-about
+    margin-top 19rem
 
 @media $breakpoint-large
-  .logos-list
-    grid-template-columns repeat(4, 1fr)
+  .section-about
+    margin-top -3rem
+
+  .section-competition
+    padding-top 36rem
+
+  .sun
+    margin-bottom -115%
+    margin-left -125%
 
 @media $breakpoint-xl
-  .layer
-    min-height 70rem
+  .section-about
+    margin-top -33rem
+    .left
+      grid-column 2/span 7
 
-  .star
-    display unset
+  .section-competition
+    padding-top 0
+    .left
+      grid-column 1/span 4
+    .right
+      grid-column 6/span 7
+    .footer
+      grid-column 4/span 9
 
-  .title
-    grid-column 1/span 9
-
-  .top
-    grid-column 1/span 5
-
-  .split
-    margin-top var(--spacing-8)
-
-  .left
-  .right
-    margin-top 0
-    grid-row 2
-
-  .left
-    grid-column 1/span 3
-    border-right 1px solid var(--white-100)
-    border-bottom 0
-
-  .right
-    grid-column 4/span 5
-
-  .section-hero
-    margin-top var(--spacing-9)
-
-  .logos-list
-    grid-template-columns repeat(6, 1fr)
+  .section-prize
+    .left
+      grid-column 2/span 5
+    .right
+      grid-column 7/span 6
 </style>
