@@ -317,8 +317,8 @@ export default {
     padding-top 36rem
 
   .sun
-    margin-bottom -115%
-    margin-left -125%
+    margin-bottom -95%
+    margin-left -115%
 
 @media $breakpoint-xl
   .section-about
