@@ -10,14 +10,7 @@
         pool in ATOMs and 10 additional Cosmos assets.
       </p>
       <div class="btn-group">
-        <tm-button
-          to-link="external"
-          :href="formURL"
-          size="l"
-          variant="contained"
-          class="btn"
-          >Register Now</tm-button
-        >
+        <section-drawer btn-text="Register Now" />
       </div>
       <p class="subtitle tm-rf-1 tm-lh-title mt-7">
         Registration ends April 30.

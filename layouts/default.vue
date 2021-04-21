@@ -50,6 +50,9 @@ export default {
 .text-center
   text-align center
 
+.text-left
+  text-align left
+
 // z-index for text (highest)
 .z-text
   z-index $z-index-text
@@ -74,6 +77,12 @@ export default {
 
 .mt-7
   margin-top var(--spacing-7)
+
+.mb-7
+  margin-bottom var(--spacing-7)
+
+.mt-6
+  margin-top var(--spacing-6)
 
 .mt-5
   margin-top var(--spacing-5)
