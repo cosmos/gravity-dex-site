@@ -289,6 +289,15 @@ export default {
     flex-direction column
     align-items flex-start
 
+  .sun
+    bottom 0
+    left -18%
+    width 305%
+    margin-bottom -105%
+    margin-left -165%
+    max-width 144rem
+    min-width 40rem
+
 @media $breakpoint-small
   .section-competition
     padding-top 36rem
