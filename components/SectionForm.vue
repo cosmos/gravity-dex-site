@@ -36,7 +36,7 @@
           <!-- DEFAULT -->
           <div v-else key="default">
             <label
-              class="bottom__get-notified tm-rf0 tm-lh-copy tm-bold"
+              class="bottom__get-notified tm-rf0 tm-lh-copy tm-bold tm-measure-narrow"
               for="field-email"
             >
               Sign up to be notified about Gravity DEX news and Cosmos updates
@@ -70,7 +70,7 @@
                 >
               </div>
             </form>
-            <p class="bottom__footnote tm-measure tm-rf-1 tm-lh-copy">
+            <p class="bottom__footnote tm-rf-1 tm-lh-copy">
               You can unsubscribe at any time.
               <a href="https://cosmos.network/privacy"
                 >Privacy policy<span class="icon__right">&#8599;</span></a
