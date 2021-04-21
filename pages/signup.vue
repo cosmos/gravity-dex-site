@@ -1,7 +1,7 @@
 <template>
   <div class="tm-section tm-wrapper tm-container">
     <div class="center">
-      <h1 class="title tm-rf4 tm-bold tm-lh-title tm-title mt-9 mb-9">
+      <h1 class="title tm-rf4 tm-bold tm-lh-title tm-title mb-9">
         Stay up to date.
       </h1>
       <section-form class="text-center" />
