@@ -121,7 +121,7 @@
           Register now
         </div>
         <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5">
-          Join the<br />Future of DeFi
+          Join the {{ totalCount }}<br />Future of DeFi
         </h1>
         <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
           Register by April 30 in order to participate in the Gravity DEX
@@ -164,12 +164,22 @@
 </template>
 
 <script>
+import axios from 'axios'
 import { FORM_URL } from '~/common/constants'
 
 export default {
+  async asyncData() {
+    const data = (
+      await axios.get(`https://backend.tendermint.com/dex-registration`)
+    ).data
+    return { data }
+  },
   computed: {
     formURL() {
       return FORM_URL
+    },
+    totalCount() {
+      return this.data.registration_count
     },
   },
 }
