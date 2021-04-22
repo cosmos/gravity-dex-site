@@ -65,7 +65,7 @@
           </h1>
           <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
             The Gravity DEX testnet competition prize pool totalling more than
-            $200,000 in ATOMs and 10 sponsored tokens from the Cosmos ecosystem.
+            $200,000 in ATOM and 10 sponsored tokens from the Cosmos ecosystem.
           </p>
         </div>
         <div class="right">
