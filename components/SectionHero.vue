@@ -7,7 +7,7 @@
       </h1>
       <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
         The Gravity DEX testnet competition starts May 4 with a $200,000 prize
-        pool in ATOMs and 10 additional Cosmos assets.
+        pool in ATOM and 10 additional Cosmos assets.
       </p>
       <div class="btn-group">
         <tm-button
