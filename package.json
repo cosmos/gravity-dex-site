@@ -21,6 +21,7 @@
     }
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.10.2",
     "jquery": "^3.6.0",
     "markdown-it": "^12.0.6",

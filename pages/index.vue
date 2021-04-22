@@ -65,7 +65,7 @@
           </h1>
           <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
             The Gravity DEX testnet competition prize pool totalling more than
-            $200,000 in ATOMs and 10 sponsored tokens from the Cosmos ecosystem.
+            $200,000 in ATOM and 10 sponsored tokens from the Cosmos ecosystem.
           </p>
         </div>
         <div class="right">
@@ -121,7 +121,7 @@
           Register now
         </div>
         <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5">
-          Join the<br />Future of DeFi
+          Join the Future of DeFi with {{ totalCount }} users
         </h1>
         <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
           Register by April 30 in order to participate in the Gravity DEX
@@ -164,12 +164,22 @@
 </template>
 
 <script>
+import axios from 'axios'
 import { FORM_URL } from '~/common/constants'
 
 export default {
+  async asyncData() {
+    const data = (
+      await axios.get(`https://backend.tendermint.com/dex-registration`)
+    ).data
+    return { data }
+  },
   computed: {
     formURL() {
       return FORM_URL
+    },
+    totalCount() {
+      return this.data.registration_count
     },
   },
 }
@@ -270,7 +280,7 @@ export default {
     margin-left 60%
 
   .graphics__item
-    left -68%
+    left 170%
 
   .section-about
     margin-top 0
@@ -278,6 +288,15 @@ export default {
   .card-inner
     flex-direction column
     align-items flex-start
+
+  .sun
+    bottom 0
+    left -18%
+    width 305%
+    margin-bottom -105%
+    margin-left -165%
+    max-width 144rem
+    min-width 40rem
 
 @media $breakpoint-small
   .section-competition
@@ -298,8 +317,8 @@ export default {
     padding-top 36rem
 
   .sun
-    margin-bottom -115%
-    margin-left -125%
+    margin-bottom -95%
+    margin-left -115%
 
 @media $breakpoint-xl
   .section-about
