@@ -81,12 +81,11 @@
                   Main prize
                 </div>
                 <h1 class="title tm-rf4 tm-bold tm-lh-title tm-title mt-5">
-                  $5,000
+                  5,000
                   <span class="unit tm-rf1 tm-bold tm-lh-title tm-title"
-                    >USD</span
+                    >ATOM</span
                   >
                 </h1>
-                <p class="subtitle tm-rf1 tm-lh-copy tm-measure">in ATOM</p>
               </div>
             </div>
             <!-- <div
