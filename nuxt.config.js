@@ -163,8 +163,14 @@ export default {
       {
         code: 'zh',
         name: '简体中文',
-        file: 'zh-ZH.js',
+        file: 'zh-CN.js',
         iso: 'zh-CN',
+      },
+      {
+        code: 'ko',
+        name: '한국어',
+        file: 'ko-KR.js',
+        iso: 'ko-KR',
       },
     ],
     vueI18n: {
