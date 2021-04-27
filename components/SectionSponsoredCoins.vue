@@ -71,6 +71,11 @@ export default {
           text: 'Cyber',
           img: 'cyber',
         },
+        {
+          url: 'https://www.desmos.network',
+          text: 'Desmos',
+          img: 'desmos',
+        },
       ],
     }
   },
