@@ -8,17 +8,13 @@
           <div
             class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
           >
-            What is it?
+            {{ $t('indexOverline') }}
           </div>
           <h1 class="title tm-rf5 tm-bold tm-lh-title tm-title mt-5">
-            The Most Advanced Interchain DEX
+            {{ $t('indexTitle') }}
           </h1>
           <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
-            Gravity uses the Inter-Blockchain Communication (IBC) protocol to
-            enable swaps and pools of digital assets between any two blockchains
-            within the Cosmos ecosystem or beyond. Gravity also achieves
-            superior efficiency compared to other AMMs due to its groundbreaking
-            Equivalent Swap Price Model.
+            {{ $t('indexDesc') }}
           </p>
         </div>
       </div>
@@ -33,17 +29,13 @@
           <div
             class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
           >
-            Testnet competition
+            {{ $t('titleOverline') }}
           </div>
           <h1 class="title tm-rf5 tm-bold tm-lh-title tm-title mt-5">
-            Let the best<br />traders win
+            {{ $t('titleTitle') }}
           </h1>
           <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
-            Participants compete for the top score, which is based on a
-            combination of their activity and profits. The top ⅓ will receive
-            prizes proportional to their leaderboard position. Participants must
-            execute deposits, withdrawals, and swaps across at least 3 pools to
-            be eligible.
+            {{ $t('titleDesc') }}
           </p>
         </div>
         <div class="footer mt-10">
@@ -58,14 +50,13 @@
           <div
             class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
           >
-            Prize pool
+            {{ $t('prizeOverline') }}
           </div>
           <h1 class="title tm-rf5 tm-bold tm-lh-title tm-title mt-5">
-            $200,000<br />At Stake
+            {{ $t('prizeTitle') }}
           </h1>
           <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
-            The Gravity DEX testnet competition prize pool totalling more than
-            $200,000 in ATOM and 10 sponsored tokens from the Cosmos ecosystem.
+            {{ $t('prizeDesc') }}
           </p>
         </div>
         <div class="right">
@@ -78,7 +69,7 @@
                 <div
                   class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
                 >
-                  Main prize
+                  {{ $t('mainPrize') }}
                 </div>
                 <h1 class="title tm-rf4 tm-bold tm-lh-title tm-title mt-5">
                   5,000
@@ -117,14 +108,20 @@
         <div
           class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
         >
-          Register now
+          {{ $t('registerOverline') }}
         </div>
-        <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5">
-          Join the Future of DeFi with {{ totalCount }} users
+        <h1
+          v-if="$i18n.locale === 'zh'"
+          class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5"
+        >
+          与 {{ totalCount }} {{ $t('registerTitle') }}
+        </h1>
+        <h1 v-else class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5">
+          {{ $t('registerTitle') }} {{ totalCount }}
+          {{ $t('registerTitleUsers') }}
         </h1>
         <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
-          Register by April 30 in order to participate in the Gravity DEX
-          testnet competition.
+          {{ $t('registerDesc') }}
         </p>
       </div>
       <section-countdown class="center mt-9" />
@@ -135,10 +132,10 @@
           background-color="var(--white)"
           color="var(--black)"
           size="l"
-          >Register</tm-button
+          >{{ $t('registerCta') }}</tm-button
         >
         <p class="subtitle tm-rf-1 tm-lh-title mt-7">
-          Registration ends April 30.
+          {{ $t('registerDate') }}
         </p>
       </div>
       <!-- <div class="mt-10">

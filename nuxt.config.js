@@ -151,7 +151,31 @@ export default {
     ],
   },
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['nuxt-i18n'],
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        file: 'en-US.js',
+        iso: 'en-US',
+      },
+      {
+        code: 'zh',
+        name: '简体中文',
+        file: 'zh-ZH.js',
+        iso: 'zh-CN',
+      },
+    ],
+    vueI18n: {
+      fallbackLocale: 'en',
+    },
+    defaultLocale: 'en',
+    detectBrowserLanguage: false,
+    seo: false,
+    lazy: true,
+    langDir: 'i18n/',
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     // https://nuxtjs.org/faq/postcss-plugins/#recommended-method

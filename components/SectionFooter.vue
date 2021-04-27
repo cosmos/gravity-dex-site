@@ -7,19 +7,29 @@
           <span class="sr-only">Cosmos</span>
         </nuxt-link>
         <div class="link-item">
-          <tm-link :href="formURL">Register</tm-link>
+          <tm-link :href="formURL">{{ $t('register') }}</tm-link>
         </div>
         <div class="link-item">
-          <tm-link href="https://v1.cosmos.network/privacy">Privacy</tm-link>
+          <tm-link href="https://v1.cosmos.network/privacy">{{
+            $t('privacy')
+          }}</tm-link>
         </div>
         <div class="link-item">
           <tm-link
             href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/"
-            >Code of conduct</tm-link
+            >{{ $t('codeofconduct') }}</tm-link
           >
         </div>
         <div class="link-item">
-          <nuxt-link to="/signup">Updates</nuxt-link>
+          <nuxt-link to="/signup">{{ $t('updates') }}</nuxt-link>
+        </div>
+        <div class="link-item">
+          <nuxt-link
+            v-for="locale in availableLocales"
+            :key="locale.code"
+            :to="switchLocalePath(locale.code)"
+            >{{ locale.name }}</nuxt-link
+          >
         </div>
       </nav>
       <nav ref="links" class="social-icons" role="navigation">
@@ -45,14 +55,7 @@
       </nav>
     </div>
     <p class="smallprint tm-rf-1 tm-lh-copy">
-      † This website is maintained by Tendermint. The contents and opinions of
-      this website are those of Tendermint. Tendermint provides links to
-      cryptocurrency exchanges as a service to the public. Tendermint does not
-      warrant that the information provided by these websites is correct,
-      complete, and up-to-date. Tendermint is not responsible for their content
-      and expressly rejects any liability for damages of any kind resulting from
-      the use, reference to, or reliance on any information contained within
-      these websites.
+      {{ $t('disclaimer') }}
     </p>
   </footer>
 </template>
@@ -103,6 +106,9 @@ export default {
   computed: {
     formURL() {
       return FORM_URL
+    },
+    availableLocales() {
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
     },
   },
   methods: {
