@@ -32,7 +32,7 @@ module.exports = {
     '† 本网站由Tendermint维护。本网站的内容和意见属于Tendermint。 Tendermint提供指向加密货币交易所的链接，作为对公众的服务。 Tendermint不保证这些网站提供的信息是否最新的，也不保证此信息的正确性和完整性。 Tendermint对这些内容不承担任何责任，并明确拒绝对由于使用、参考或依赖这些网站中包含的任何信息而造成的任何形式的损害承担任何责任。',
   registrationDeadlineTitle: '注册截止日期',
   registrationDeadlineDay: '30日',
-  registrationDeadlineMonth: 'April',
+  registrationDeadlineMonth: '4月',
   competitionTitle: '竞赛期间',
   competitionDay: '04 - 11日',
   competitionMonth: '5月',
