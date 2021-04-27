@@ -13,7 +13,7 @@ module.exports = {
   titleDesc:
     '参加者争夺最高分，取决于他们的活动和利润。前⅓的参加者将获得与其排行榜位置成正比的奖金。参加者必须在至少3个池中进行存款，取款和兑换，才能符合资格领取奖金。',
   prizeOverline: '奖池',
-  prizeTitle: '高达<br />$200,000',
+  prizeTitle: '高达 $200,000',
   prizeDesc:
     'Gravity DEX测试网竞赛奖池总额超过200,000美元，由ATOM和来自Cosmos生态系统的10种赞助者代币构成。',
   mainPrize: '主要奖励',

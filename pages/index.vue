@@ -237,11 +237,17 @@ export default {
     grid-column 1/-1
     z-index 50
 
+.section-competition .right .title
+  max-width 8em
+
 // Prize
 .section-prize
   .left
   .right
     grid-column 1/-1
+
+.section-prize .left .title
+  max-width 5em
 
 .section-prize .right
   margin-top var(--spacing-9)

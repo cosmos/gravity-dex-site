@@ -49,6 +49,9 @@ export default {
   text-align center
   position relative
 
+  .title
+   max-width 6em
+
 .blob
   position absolute
   top -160%

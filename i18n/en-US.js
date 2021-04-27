@@ -1,5 +1,5 @@
 module.exports = {
-  heroHeading: 'Bringing DeFi<br />to Cosmos',
+  heroHeading: 'Bringing DeFi to Cosmos',
   heroDesc:
     'The Gravity DEX testnet competition starts May 4 with a $200,000 prize pool in ATOM and 10 additional Cosmos assets.',
   heroCta: 'Register Now',
@@ -9,11 +9,11 @@ module.exports = {
   indexDesc:
     'Gravity uses the Inter-Blockchain Communication (IBC) protocol to enable swaps and pools of digital assets between any two blockchains within the Cosmos ecosystem or beyond. Gravity also achieves superior efficiency compared to other AMMs due to its groundbreaking Equivalent Swap Price Model.',
   titleOverline: 'Testnet competition',
-  titleTitle: 'Let the best<br />traders win',
+  titleTitle: 'Let the best traders win',
   titleDesc:
     'Participants compete for the top score, which is based on a combination of their activity and profits. The top ⅓ will receive prizes proportional to their leaderboard position. Participants must execute deposits, withdrawals, and swaps across at least 3 pools to be eligible.',
   prizeOverline: 'Prize pool',
-  prizeTitle: '$200,000<br />At Stake',
+  prizeTitle: '$200,000 At Stake',
   prizeDesc:
     'The Gravity DEX testnet competition prize pool totalling more than $200,000 in ATOM and 10 sponsored tokens from the Cosmos ecosystem.',
   mainPrize: 'Main prize',
