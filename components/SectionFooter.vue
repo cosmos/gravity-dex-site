@@ -24,12 +24,15 @@
           <nuxt-link to="/signup">{{ $t('updates') }}</nuxt-link>
         </div>
         <div class="link-item">
-          <nuxt-link
-            v-for="locale in availableLocales"
-            :key="locale.code"
-            :to="switchLocalePath(locale.code)"
-            >{{ locale.name }}</nuxt-link
-          >
+          <select :value="$i18n.locale" @change="onChange">
+            <option
+              v-for="(locale, i) in $i18n.locales"
+              :key="i"
+              :value="locale.code"
+            >
+              {{ locale.name }}
+            </option>
+          </select>
         </div>
       </nav>
       <nav ref="links" class="social-icons" role="navigation">
@@ -107,11 +110,11 @@ export default {
     formURL() {
       return FORM_URL
     },
-    availableLocales() {
-      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
-    },
   },
   methods: {
+    onChange(event) {
+      this.$i18n.setLocale(event.target.value)
+    },
     url(link) {
       return link.url || link
     },
