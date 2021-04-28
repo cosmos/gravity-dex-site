@@ -177,7 +177,11 @@ export default {
       fallbackLocale: 'en',
     },
     defaultLocale: 'en',
-    detectBrowserLanguage: false,
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      onlyOnRoot: true,
+    },
     seo: false,
     lazy: true,
     langDir: 'i18n/',
