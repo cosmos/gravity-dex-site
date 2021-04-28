@@ -117,7 +117,7 @@
           与 {{ totalCount }} {{ $t('registerTitle') }}
         </h1>
         <h1
-          v-if="$i18n.locale === 'ko'"
+          v-else-if="$i18n.locale === 'ko'"
           class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5"
         >
           {{ totalCount }} {{ $t('registerTitleUsers') }}

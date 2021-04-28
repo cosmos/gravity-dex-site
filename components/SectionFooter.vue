@@ -6,8 +6,17 @@
           <logo-gravity-dex-wordmark class="logo__cosmos" />
           <span class="sr-only">Cosmos</span>
         </nuxt-link>
+        <div class="link-item break-line">
+          <hr class="horizontal" />
+        </div>
         <div class="link-item">
           <tm-link :href="formURL">{{ $t('register') }}</tm-link>
+        </div>
+        <div class="link-item break-line">
+          <hr class="vertical" />
+        </div>
+        <div class="link-item">
+          <nuxt-link to="/signup">{{ $t('updates') }}</nuxt-link>
         </div>
         <div class="link-item">
           <tm-link href="https://v1.cosmos.network/privacy">{{
@@ -20,11 +29,11 @@
             >{{ $t('codeofconduct') }}</tm-link
           >
         </div>
-        <div class="link-item">
-          <nuxt-link to="/signup">{{ $t('updates') }}</nuxt-link>
+        <div class="link-item break-line">
+          <hr class="vertical" />
         </div>
         <div class="link-item">
-          <select :value="$i18n.locale" @change="onChange">
+          <select :value="$i18n.locale" class="test" @change="onChange">
             <option
               v-for="(locale, i) in $i18n.locales"
               :key="i"
@@ -182,15 +191,29 @@ export default {
   gap var(--spacing-4)
   color inherit
   transition transform .4s $ease-out, opacity .4s $ease-out, color .4s $ease-out, visibility .4s 0s
-  padding-right 1.5rem
-  border-right 1px solid var(--white-100)
   svg
     width auto
   &__cosmos
     height 1.125rem
 
-.link-item
-  margin-left 1.5rem
+select
+  border 1px solid var(--white-100)
+  border-radius $border-radius-3
+  padding 0.3125rem
+  background-color transparent
+  color currentColor
+
+.horizontal
+  display unset
+  height 1.5rem
+  border 0
+  border-left 1px solid var(--white-100)
+
+.vertical
+  display unset
+  width 1.5rem
+  border 0
+  border-top 1px solid var(--white-100)
 
 .nav-bottom
   display flex
@@ -202,15 +225,35 @@ export default {
   .row
     align-items unset
 
+  .nav-bottom
+    display flex
+    flex-direction column
+
   .link-item
     margin-left 0
 
   .link-item + .link-item
     margin-top var(--spacing-6)
 
+  .break-line
+    display none
+
+@media $breakpoint-small
   .nav-bottom
     display flex
     flex-direction column
+
+  .row
+    align-items unset
+
+  .link-item
+    margin-left 0
+
+  .link-item + .link-item
+    margin-top var(--spacing-6)
+
+  .break-line
+    display none
 
 @media $breakpoint-medium
   .row
@@ -219,7 +262,41 @@ export default {
   .social-icons
     margin-top 0
 
+  .nav-bottom
+    display flex
+    flex-direction column
+
+  .link-item
+    margin-left 0
+
+  .link-item + .link-item
+    margin-top var(--spacing-6)
+
+  .break-line
+    display none
+
+@media $breakpoint-large
+  .nav-bottom
+    flex-direction row
+
+  .link-item + .link-item
+    margin-top 0
+
+  .link-item
+    margin-left 1.5rem
+    display flex
+    align-items center
+
 @media $breakpoint-xl
+  .nav-bottom
+    flex-direction row
+
+  .link-item
+    margin-left 1.5rem
+    display flex
+    align-items center
+
+@media $breakpoint-xxl
   .footer > *
     grid-column 2/span 10
 </style>
