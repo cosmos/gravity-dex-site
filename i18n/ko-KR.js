@@ -27,6 +27,7 @@ module.exports = {
   countdownTitle: '지원 마감까지 남은 시간',
   register: '지원',
   privacy: ' 개인 정보',
+  terms: '이용 약관',
   codeofconduct: '행동 강령',
   updates: ' 업데이트',
   disclaimer:

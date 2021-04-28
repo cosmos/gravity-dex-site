@@ -27,6 +27,7 @@ module.exports = {
   countdownTitle: 'Time remaining to register',
   register: 'Register',
   privacy: 'Privacy',
+  terms: 'T&C',
   codeofconduct: 'Code of conduct',
   updates: 'Updates',
   disclaimer:

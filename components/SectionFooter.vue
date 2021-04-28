@@ -24,6 +24,11 @@
           }}</tm-link>
         </div>
         <div class="link-item">
+          <tm-link href="https://gravitydex.io/terms">{{
+            $t('terms')
+          }}</tm-link>
+        </div>
+        <div class="link-item">
           <tm-link
             href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/"
             >{{ $t('codeofconduct') }}</tm-link

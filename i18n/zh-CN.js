@@ -26,6 +26,7 @@ module.exports = {
   countdownTitle: '剩余注册时间',
   register: '注册',
   privacy: '隐私政策',
+  terms: '条款及细则',
   codeofconduct: '行为准则',
   updates: '最新消息',
   disclaimer:
