@@ -199,9 +199,26 @@ export default {
 select
   border 1px solid var(--white-100)
   border-radius $border-radius-3
-  padding 0.3125rem
-  background-color transparent
   color currentColor
+  padding 10px 0
+  width fit-content
+  max-width 100%
+  box-sizing border-box
+  appearance none
+  background none
+  background-image url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 5L8 10.5L13.5 5' stroke='white' stroke-opacity='0.667' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+  background-repeat no-repeat, repeat
+  background-position right .7em top 50%, 0 0
+  background-size .75em auto, 100%
+  background-color transparent
+  padding-left 10px
+  padding-right 20px
+
+  &:focus
+    outline none
+
+  &:hover
+    cursor pointer
 
 .horizontal
   display unset
