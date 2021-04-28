@@ -76,6 +76,11 @@ export default {
           text: 'Desmos',
           img: 'desmos',
         },
+        {
+          url: 'https://commercio.network',
+          text: 'Commercio',
+          img: 'commercio',
+        },
       ],
     }
   },
@@ -104,5 +109,5 @@ export default {
 
 @media $breakpoint-xl
   .logos-list
-    grid-template-columns repeat(6, 1fr)
+    grid-template-columns repeat(5, 1fr)
 </style>
