@@ -6,20 +6,42 @@
           <logo-gravity-dex-wordmark class="logo__cosmos" />
           <span class="sr-only">Cosmos</span>
         </nuxt-link>
-        <div class="link-item">
-          <tm-link :href="formURL">Register</tm-link>
+        <div class="link-item break-line">
+          <hr class="horizontal" />
         </div>
         <div class="link-item">
-          <tm-link href="https://v1.cosmos.network/privacy">Privacy</tm-link>
+          <tm-link :href="formURL">{{ $t('register') }}</tm-link>
+        </div>
+        <div class="link-item break-line">
+          <hr class="vertical" />
+        </div>
+        <div class="link-item">
+          <nuxt-link to="/signup">{{ $t('updates') }}</nuxt-link>
+        </div>
+        <div class="link-item">
+          <tm-link href="https://v1.cosmos.network/privacy">{{
+            $t('privacy')
+          }}</tm-link>
         </div>
         <div class="link-item">
           <tm-link
             href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/"
-            >Code of conduct</tm-link
+            >{{ $t('codeofconduct') }}</tm-link
           >
         </div>
+        <div class="link-item break-line">
+          <hr class="vertical" />
+        </div>
         <div class="link-item">
-          <nuxt-link to="/signup">Updates</nuxt-link>
+          <select :value="$i18n.locale" class="test" @change="onChange">
+            <option
+              v-for="(locale, i) in $i18n.locales"
+              :key="i"
+              :value="locale.code"
+            >
+              {{ locale.name }}
+            </option>
+          </select>
         </div>
       </nav>
       <nav ref="links" class="social-icons" role="navigation">
@@ -45,14 +67,7 @@
       </nav>
     </div>
     <p class="smallprint tm-rf-1 tm-lh-copy">
-      † This website is maintained by Tendermint. The contents and opinions of
-      this website are those of Tendermint. Tendermint provides links to
-      cryptocurrency exchanges as a service to the public. Tendermint does not
-      warrant that the information provided by these websites is correct,
-      complete, and up-to-date. Tendermint is not responsible for their content
-      and expressly rejects any liability for damages of any kind resulting from
-      the use, reference to, or reliance on any information contained within
-      these websites.
+      {{ $t('disclaimer') }}
     </p>
   </footer>
 </template>
@@ -106,6 +121,9 @@ export default {
     },
   },
   methods: {
+    onChange(event) {
+      this.$i18n.setLocale(event.target.value)
+    },
     url(link) {
       return link.url || link
     },
@@ -173,15 +191,46 @@ export default {
   gap var(--spacing-4)
   color inherit
   transition transform .4s $ease-out, opacity .4s $ease-out, color .4s $ease-out, visibility .4s 0s
-  padding-right 1.5rem
-  border-right 1px solid var(--white-100)
   svg
     width auto
   &__cosmos
     height 1.125rem
 
-.link-item
-  margin-left 1.5rem
+select
+  border 1px solid var(--white-100)
+  border-radius $border-radius-3
+  color currentColor
+  padding 10px 0
+  width fit-content
+  max-width 100%
+  box-sizing border-box
+  appearance none
+  background none
+  background-image url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 5L8 10.5L13.5 5' stroke='white' stroke-opacity='0.667' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+  background-repeat no-repeat, repeat
+  background-position right .7em top 50%, 0 0
+  background-size .75em auto, 100%
+  background-color transparent
+  padding-left 10px
+  padding-right 20px
+
+  &:focus
+    outline none
+
+  &:hover
+    cursor pointer
+
+.horizontal
+  display unset
+  height 1.5rem
+  border 0
+  border-left 1px solid var(--white-100)
+
+.vertical
+  display unset
+  width 1.5rem
+  border 0
+  border-top 1px solid var(--white-100)
 
 .nav-bottom
   display flex
@@ -193,15 +242,35 @@ export default {
   .row
     align-items unset
 
+  .nav-bottom
+    display flex
+    flex-direction column
+
   .link-item
     margin-left 0
 
   .link-item + .link-item
     margin-top var(--spacing-6)
 
+  .break-line
+    display none
+
+@media $breakpoint-small
   .nav-bottom
     display flex
     flex-direction column
+
+  .row
+    align-items unset
+
+  .link-item
+    margin-left 0
+
+  .link-item + .link-item
+    margin-top var(--spacing-6)
+
+  .break-line
+    display none
 
 @media $breakpoint-medium
   .row
@@ -210,7 +279,41 @@ export default {
   .social-icons
     margin-top 0
 
+  .nav-bottom
+    display flex
+    flex-direction column
+
+  .link-item
+    margin-left 0
+
+  .link-item + .link-item
+    margin-top var(--spacing-6)
+
+  .break-line
+    display none
+
+@media $breakpoint-large
+  .nav-bottom
+    flex-direction row
+
+  .link-item + .link-item
+    margin-top 0
+
+  .link-item
+    margin-left 1.5rem
+    display flex
+    align-items center
+
 @media $breakpoint-xl
+  .nav-bottom
+    flex-direction row
+
+  .link-item
+    margin-left 1.5rem
+    display flex
+    align-items center
+
+@media $breakpoint-xxl
   .footer > *
     grid-column 2/span 10
 </style>

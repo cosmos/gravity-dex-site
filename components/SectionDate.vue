@@ -1,48 +1,50 @@
 <template>
   <div class="cards-container">
-    <div v-for="item in items" :key="item.title" class="card-item">
+    <div class="card-item">
       <span class="top-left" />
       <span class="top-right" />
       <span class="bottom-left" />
       <span class="bottom-right" />
       <div class="event tm-rf-0 tm-lh-title">
-        {{ item.event }}
+        {{ $t('registrationDeadlineTitle') }}
       </div>
       <div class="title tm-rf3 tm-bold tm-lh-title tm-title">
-        {{ item.day }}
+        {{ $t('registrationDeadlineDay') }}
       </div>
       <div class="title tm-rf0 tm-bold tm-lh-title tm-title">
-        {{ item.month }}
+        {{ $t('registrationDeadlineMonth') }}
+      </div>
+    </div>
+    <div class="card-item">
+      <span class="top-left" />
+      <span class="top-right" />
+      <span class="bottom-left" />
+      <span class="bottom-right" />
+      <div class="event tm-rf-0 tm-lh-title">{{ $t('competitionTitle') }}</div>
+      <div class="title tm-rf3 tm-bold tm-lh-title tm-title">
+        {{ $t('competitionDay') }}
+      </div>
+      <div class="title tm-rf0 tm-bold tm-lh-title tm-title">
+        {{ $t('competitionMonth') }}
+      </div>
+    </div>
+    <div class="card-item">
+      <span class="top-left" />
+      <span class="top-right" />
+      <span class="bottom-left" />
+      <span class="bottom-right" />
+      <div class="event tm-rf-0 tm-lh-title">{{ $t('winnersTitle') }}</div>
+      <div class="title tm-rf3 tm-bold tm-lh-title tm-title">
+        {{ $t('competitionDay') }}
+      </div>
+      <div class="title tm-rf0 tm-bold tm-lh-title tm-title">
+        {{ $t('competitionMonth') }}
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      items: [
-        {
-          event: 'Registration deadline',
-          day: '30',
-          month: 'April',
-        },
-        {
-          event: 'Competition',
-          day: '04 - 11',
-          month: 'May',
-        },
-        {
-          event: 'Winners announced',
-          day: '18',
-          month: 'May',
-        },
-      ],
-    }
-  },
-}
-</script>
+<script></script>
 
 <style lang="stylus" scoped>
 .cards-container

@@ -2,12 +2,10 @@
   <div class="section-hero">
     <div class="tm-wrapper tm-section tm-container">
       <h1 class="title tm-rf6 tm-rf7-m-up tm-bold tm-lh-title tm-title">
-        Bringing DeFi<br />
-        to Cosmos
+        {{ $t('heroHeading') }}
       </h1>
       <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
-        The Gravity DEX testnet competition starts May 4 with a $200,000 prize
-        pool in ATOM and 10 additional Cosmos assets.
+        {{ $t('heroDesc') }}
       </p>
       <div class="btn-group">
         <tm-button
@@ -16,11 +14,11 @@
           size="l"
           variant="contained"
           class="btn"
-          >Register Now</tm-button
+          >{{ $t('heroCta') }}</tm-button
         >
       </div>
       <p class="subtitle tm-rf-1 tm-lh-title mt-7">
-        Registration ends April 30.
+        {{ $t('heroDate') }}
       </p>
     </div>
     <div class="hero-graphics z-graphics">
@@ -50,6 +48,9 @@ export default {
 .section-hero
   text-align center
   position relative
+
+  .title
+   max-width 6em
 
 .blob
   position absolute

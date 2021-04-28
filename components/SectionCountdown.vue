@@ -3,7 +3,7 @@
     v-if="toTimezone(endDate, endTime) >= moment()"
     class="section-countdown"
   >
-    <div class="overline tm-rf0 tm-lh-title">Time remaining to register</div>
+    <div class="overline tm-rf0 tm-lh-title">{{ $t('countdownTitle') }}</div>
     <tm-countdown
       :now="currentTime"
       :end="countdownTimer(endDate, endTime)"
