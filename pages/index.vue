@@ -117,8 +117,8 @@
           v-if="$i18n.locale === 'zh'"
           class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure"
         >
-          {{ totalCount }} {{ $t('registerTitleUsers') }}
-          {{ $t('registerDesc') }}
+          {{ totalCount }} {{ $t('registerTitleUsers')
+          }}{{ $t('registerDesc') }}
         </p>
         <p
           v-else-if="$i18n.locale === 'ko'"

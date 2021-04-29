@@ -2,8 +2,8 @@ module.exports = {
   heroHeading: 'Cosmos에 DeFi를',
   heroDesc:
     'Gravity DEX 트레이딩 대회가 5월 4일에 시작합니다. 총 상금 $200,000가 ATOM과 10가지 Cosmos 자산으로 수여됩니다.',
-  heroCta: 'Get Updates', // TODO
-  heroDate: 'Registration closed. Competition starts May 4', // TODO
+  heroCta: '업데이트 받기', // TODO
+  heroDate: '등록이 마감되었습니다. 대회 시작 5 월 4 일', // TODO
   indexOverline: 'Gravity DEX는?',
   indexTitle: '가장 진보한 인터체인 DEX',
   indexDesc:
@@ -17,14 +17,14 @@ module.exports = {
   prizeDesc:
     'Gravity DEX 테스트넷 트레이딩 대회의 총 상금 200,000$는 ATOM과 Cosmos 생태계의 스폰서 토큰 10가지로 이루어져 있습니다.',
   mainPrize: '주요 상금',
-  registerOverline: 'Registration Closed', // TODO
-  registerTitle: 'The Future of DeFi starts here', // TODO
+  registerOverline: '등록 마감', // TODO
+  registerTitle: 'DeFi의 미래는 여기서 시작됩니다', // TODO
   registerTitleUsers: '명의', // TODO
   registerDesc:
-    'Gravity DEX 테스트넷 트레이딩 대회에 참가하려면 4월 30일까지 지원하세요',
-  registerCta: 'Get Updates', // TODO
-  registerDate: 'Competition starts May 4.', // TODO
-  countdownTitle: 'Time remaining to competition', // TODO
+    '사용자가 Gravity DEX 테스트 넷 대회에 참가하기 위해 등록했습니다.',
+  registerCta: '업데이트 받기', // TODO
+  registerDate: '대회는 5 월 4 일에 시작됩니다.', // TODO
+  countdownTitle: '경쟁까지 남은 시간', // TODO
   register: '지원',
   privacy: ' 개인 정보',
   terms: '이용 약관',
@@ -42,12 +42,12 @@ module.exports = {
   winnersDay: '18일',
   winnersMonth: 'May월',
   ctaFirstUrl: 'http://gravitydex.io',
-  ctaFirstOverline: 'Guide', // TODO
-  ctaFirstTitle: 'Participant Guide', // TODO
+  ctaFirstOverline: '안내서', // TODO
+  ctaFirstTitle: '참가자 가이드', // TODO
   ctaSecondUrl: 'http://gravitydex.io',
-  ctaSecondOverline: 'Guide', // TODO
-  ctaSecondTitle: 'Rules & Regulations', // TODO
+  ctaSecondOverline: '안내서', // TODO
+  ctaSecondTitle: '규칙 및 규정', // TODO
   ctaThirdUrl: 'http://gravitydex.io',
-  ctaThirdOverline: 'Support', // TODO
-  ctaThirdTitle: 'Resources', // TODO
+  ctaThirdOverline: '지원하다', // TODO
+  ctaThirdTitle: '자원', // TODO
 }
