@@ -1,7 +1,7 @@
 module.exports = {
   heroHeading: 'Cosmos에 DeFi를',
   heroDesc:
-    'Gravity DEX 트레이딩 대회가 5월 4일에 시작합니다. 총 상금 200,000$가 ATOM과 10가지 Cosmos 자산으로 수여됩니다.',
+    'Gravity DEX 트레이딩 대회가 5월 4일에 시작합니다. 총 상금 $200,000가 ATOM과 10가지 Cosmos 자산으로 수여됩니다.',
   heroCta: '지금 지원하세요',
   heroDate: '지원 마감은 4월 30일입니다.',
   indexOverline: 'Gravity DEX는?',
@@ -9,11 +9,11 @@ module.exports = {
   indexDesc:
     'Gravity는 인터-블록체인 커뮤니케이션 (IBC) 프로토콜로 설계되어, Cosmos 생태계 안팎의 어떤 두 블록체인 간에도 디지털 자산의 스왑과 풀 제공이 가능합니다. 또한, 혁신적인 Equivalent Swap Price Model을 도입하여 다른 AMM보다 훨씬 효율적인 거래가 가능합니다.',
   titleOverline: '테스트넷 트레이딩 대회',
-  titleTitle: '최고의 트레이더들에게???',
+  titleTitle: '상위 트레이더들에게는 상금을...',
   titleDesc:
-    '참가자들은 트레이딩 활동과 수익으로 구성된 점수로 경쟁합니다. 상위 ⅓에 속한 참가자들은 자신의 순위에 비례하여 상금을 받습니다. 상금을 받으려면 반드시 3개 이상의 풀에서 예치, 출금, 스왑을 실행해야 합니다.',
+    '참가자들은 트레이딩 활동과 수익으로 구성된 점수로 경쟁합니다. 상위 ⅓에 속한 참가자들은 자신의 순위에 비례하여 상금을 받습니다. 상금을 받으려면 반드시 3개 이상의 풀에서 예치, 스왑을 실행해야 합니다.',
   prizeOverline: '총 상금',
-  prizeTitle: '$200,000 At Stake',
+  prizeTitle: '총 상금 $200,000 부여',
   prizeDesc:
     'Gravity DEX 테스트넷 트레이딩 대회의 총 상금 200,000$는 ATOM과 Cosmos 생태계의 스폰서 토큰 10가지로 이루어져 있습니다.',
   mainPrize: '주요 상금',
