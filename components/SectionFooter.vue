@@ -10,12 +10,6 @@
           <hr class="horizontal" />
         </div>
         <div class="link-item">
-          <tm-link :href="formURL">{{ $t('register') }}</tm-link>
-        </div>
-        <div class="link-item break-line">
-          <hr class="vertical" />
-        </div>
-        <div class="link-item">
           <nuxt-link to="/signup">{{ $t('updates') }}</nuxt-link>
         </div>
         <div class="link-item">
@@ -79,7 +73,6 @@
 
 <script>
 import LogoGravityDexWordmark from '~/components/logos/LogoGravityDexWordmark.vue'
-import { FORM_URL } from '~/common/constants'
 
 const iconList = [
   [
@@ -119,11 +112,6 @@ export default {
         { title: 'Discord', url: 'https://discord.gg/vcExX9T' },
       ],
     }
-  },
-  computed: {
-    formURL() {
-      return FORM_URL
-    },
   },
   methods: {
     onChange(event) {
