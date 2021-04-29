@@ -7,19 +7,19 @@
       <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
         {{ $t('heroDesc') }}
       </p>
-      <div class="btn-group">
+      <p class="subtitle tm-rf-1 tm-lh-title">
+        {{ $t('heroDate') }}
+      </p>
+      <div class="btn-group mt-7">
         <tm-button
-          to-link="external"
-          :href="formURL"
+          to-link="internal"
+          to="signup"
           size="l"
           variant="contained"
           class="btn"
           >{{ $t('heroCta') }}</tm-button
         >
       </div>
-      <p class="subtitle tm-rf-1 tm-lh-title mt-7">
-        {{ $t('heroDate') }}
-      </p>
     </div>
     <div class="hero-graphics z-graphics">
       <img src="~/assets/images/bg/green-blob.png" class="blob" />
@@ -29,15 +29,7 @@
 </template>
 
 <script>
-import { FORM_URL } from '~/common/constants'
-
-export default {
-  computed: {
-    formURL() {
-      return FORM_URL
-    },
-  },
-}
+export default {}
 </script>
 
 <style lang="stylus" scoped>
@@ -68,9 +60,6 @@ export default {
   max-width 22em
   color var(--white-800)
   font-feature-settings 'liga' on, 'calt' on, 'zero' on // safari
-
-.btn-group
-  margin-top var(--spacing-8)
 
 @media $breakpoint-small
   .btn-group

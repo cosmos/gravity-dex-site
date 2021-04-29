@@ -2,8 +2,8 @@ module.exports = {
   heroHeading: '在Cosmos享受DeFi',
   heroDesc:
     'Gravity DEX测试网竞赛将于5月4日开始，ATOM和Cosmos资产组成了一共200,000美元的奖金池。',
-  heroCta: '立即注册',
-  heroDate: '注册将于4月30日结束。',
+  heroCta: 'Get Updates', // TODO
+  heroDate: 'Registration closed. Competition starts May 4', // TODO
   indexOverline: 'Gravity DEX是什么？',
   indexTitle: '最先进的链间DEX',
   indexDesc:
@@ -17,13 +17,13 @@ module.exports = {
   prizeDesc:
     'Gravity DEX测试网竞赛奖池总额超过200,000美元，由ATOM和来自Cosmos生态系统的10种赞助者代币构成。',
   mainPrize: '主要奖励',
-  registerOverline: '立即注册',
-  registerTitle: '个用户一起加入DeFi的未来',
-  registerTitleUsers: '用户',
+  registerOverline: 'Registration Closed', // TODO
+  registerTitle: 'The Future of DeFi starts here', // TODO
+  registerTitleUsers: '用户', // TODO
   registerDesc: '在4月30日之前注册并参加Gravity DEX测试网竞赛',
-  registerCta: '注册',
-  registerDate: '注册将于4月30日结束。',
-  countdownTitle: '剩余注册时间',
+  registerCta: 'Get Updates', // TODO
+  registerDate: 'Competition starts May 4。', // TODO
+  countdownTitle: 'Time remaining to competition', // TODO
   register: '注册',
   privacy: '隐私政策',
   terms: '条款及细则',
@@ -40,4 +40,13 @@ module.exports = {
   winnersTitle: '获奖名单公布',
   winnersDay: '18日',
   winnersMonth: '5月',
+  ctaFirstUrl: 'http://gravitydex.io',
+  ctaFirstOverline: 'Guide', // TODO
+  ctaFirstTitle: 'Participant Guide', // TODO
+  ctaSecondUrl: 'http://gravitydex.io',
+  ctaSecondOverline: 'Guide', // TODO
+  ctaSecondTitle: 'Rules & Regulations', // TODO
+  ctaThirdUrl: 'http://gravitydex.io',
+  ctaThirdOverline: 'Support', // TODO
+  ctaThirdTitle: 'Resources', // TODO
 }

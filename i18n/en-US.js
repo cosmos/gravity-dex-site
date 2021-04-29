@@ -2,8 +2,8 @@ module.exports = {
   heroHeading: 'Bringing DeFi to Cosmos',
   heroDesc:
     'The Gravity DEX testnet competition starts May 4 with a $200,000 prize pool in ATOM and 10 additional Cosmos assets.',
-  heroCta: 'Register Now',
-  heroDate: 'Registration ends April 30.',
+  heroCta: 'Get Updates',
+  heroDate: 'Registration closed. Competition starts May 4',
   indexOverline: 'What is it?',
   indexTitle: 'The Most Advanced Interchain DEX',
   indexDesc:
@@ -17,14 +17,14 @@ module.exports = {
   prizeDesc:
     'The Gravity DEX testnet competition prize pool totalling more than $200,000 in ATOM and 10 sponsored tokens from the Cosmos ecosystem.',
   mainPrize: 'Main prize',
-  registerOverline: 'Register now',
-  registerTitle: 'Join the Future of DeFi with',
+  registerOverline: 'Registration Closed',
+  registerTitle: 'The Future of DeFi starts here',
   registerTitleUsers: 'users',
   registerDesc:
-    'Register by April 30 in order to participate in the Gravity DEX testnet competition.',
-  registerCta: 'Register',
-  registerDate: 'Registration ends April 30.',
-  countdownTitle: 'Time remaining to register',
+    'have registered to participate in the Gravity DEX testnet competition.',
+  registerCta: 'Get Updates',
+  registerDate: 'Competition starts May 4.',
+  countdownTitle: 'Time remaining to competition',
   register: 'Register',
   privacy: 'Privacy',
   terms: 'T&C',
@@ -41,4 +41,13 @@ module.exports = {
   winnersTitle: 'Winners announced',
   winnersDay: '18',
   winnersMonth: 'May',
+  ctaFirstUrl: 'http://gravitydex.io', // TODO
+  ctaFirstOverline: 'Guide',
+  ctaFirstTitle: 'Participant Guide',
+  ctaSecondUrl: 'http://gravitydex.io', // TODO
+  ctaSecondOverline: 'Guide',
+  ctaSecondTitle: 'Rules & Regulations',
+  ctaThirdUrl: 'http://gravitydex.io', // TODO
+  ctaThirdOverline: 'Support',
+  ctaThirdTitle: 'Resources',
 }
