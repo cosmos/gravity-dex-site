@@ -1,7 +1,7 @@
 module.exports = {
   heroHeading: 'Cosmos에 DeFi를',
   heroDesc:
-    'Gravity DEX 트레이딩 대회가 5월 4일에 시작합니다. 총 상금 $200,000가 ATOM과 10가지 Cosmos 자산으로 수여됩니다.',
+    'Gravity DEX 트레이딩 대회가 5월 4일에 시작합니다. 총 상금 $200,000가 ATOM과 12가지 Cosmos 자산으로 수여됩니다.',
   heroCta: '업데이트 받기', // TODO
   heroDate: '등록이 마감되었습니다. 대회 시작 5 월 4 일', // TODO
   indexOverline: 'Gravity DEX는?',

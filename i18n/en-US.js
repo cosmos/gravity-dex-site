@@ -1,7 +1,7 @@
 module.exports = {
   heroHeading: 'Bringing DeFi to Cosmos',
   heroDesc:
-    'The Gravity DEX testnet competition starts May 4 with a $200,000 prize pool in ATOM and 10 additional Cosmos assets.',
+    'The Gravity DEX testnet competition starts May 4 with a $200,000 prize pool in ATOM and 12 additional Cosmos assets.',
   heroCta: 'Get Updates',
   heroDate: 'Registration closed. Competition starts May 4',
   indexOverline: 'What is it?',
