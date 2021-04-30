@@ -147,9 +147,9 @@
           >{{ $t('registerCta') }}</tm-button
         >
       </div>
-      <!-- <div class="mt-10">
+      <div class="mt-10">
         <section-cta />
-      </div> -->
+      </div>
     </div>
 
     <!-- <div class="tm-section tm-container">
