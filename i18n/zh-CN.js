@@ -40,9 +40,10 @@ module.exports = {
   winnersTitle: '获奖名单公布',
   winnersDay: '18日',
   winnersMonth: '5月',
-  ctaFirstUrl: 'http://gravitydex.io',
+  ctaFirstUrl:
+    'https://medium.com/tendermint/gravity-dex-%E7%AB%9E%E8%B5%9B%E6%8C%87%E5%8D%97-1c41b6bcf921',
   ctaFirstOverline: '指导', // TODO
-  ctaFirstTitle: '参加者指南', // TODO
+  ctaFirstTitle: '竞赛指南', // TODO
   ctaSecondUrl: 'http://gravitydex.io',
   ctaSecondOverline: '指导', // TODO
   ctaSecondTitle: '规章制度', // TODO
