@@ -110,40 +110,42 @@
         >
           {{ $t('registerOverline') }}
         </div>
-        <h1
-          v-if="$i18n.locale === 'zh'"
-          class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5"
-        >
-          与 {{ totalCount }} {{ $t('registerTitle') }}
-        </h1>
-        <h1
-          v-else-if="$i18n.locale === 'ko'"
-          class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5"
-        >
-          {{ totalCount }} {{ $t('registerTitleUsers') }}
+        <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5">
           {{ $t('registerTitle') }}
         </h1>
-        <h1 v-else class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5">
-          {{ $t('registerTitle') }} {{ totalCount }}
-          {{ $t('registerTitleUsers') }}
-        </h1>
-        <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
+        <p
+          v-if="$i18n.locale === 'zh'"
+          class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure"
+        >
+          {{ totalCount }} {{ $t('registerTitleUsers')
+          }}{{ $t('registerDesc') }}
+        </p>
+        <p
+          v-else-if="$i18n.locale === 'ko'"
+          class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure"
+        >
+          {{ totalCount }} {{ $t('registerTitleUsers') }}
+          {{ $t('registerDesc') }}
+        </p>
+        <p v-else class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
+          {{ totalCount }} {{ $t('registerTitleUsers') }}
           {{ $t('registerDesc') }}
         </p>
       </div>
       <section-countdown class="center mt-9" />
       <div class="center mt-9">
+        <p class="subtitle tm-rf-1 tm-lh-title">
+          {{ $t('registerDate') }}
+        </p>
         <tm-button
-          to-link="external"
-          :href="formURL"
+          to-link="internal"
+          to="signup"
           background-color="var(--white)"
           color="var(--black)"
           size="l"
+          class="mt-7"
           >{{ $t('registerCta') }}</tm-button
         >
-        <p class="subtitle tm-rf-1 tm-lh-title mt-7">
-          {{ $t('registerDate') }}
-        </p>
       </div>
       <!-- <div class="mt-10">
         <section-cta />
@@ -168,7 +170,7 @@
 
 <script>
 import axios from 'axios'
-import { FORM_URL } from '~/common/constants'
+import commaNumber from 'comma-number'
 
 export default {
   async asyncData() {
@@ -178,11 +180,9 @@ export default {
     return { data }
   },
   computed: {
-    formURL() {
-      return FORM_URL
-    },
     totalCount() {
-      return this.data.registration_count
+      const num = this.data.registration_count
+      return commaNumber(num)
     },
   },
 }
