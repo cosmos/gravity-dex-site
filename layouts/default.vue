@@ -77,4 +77,7 @@ export default {
 
 .mt-5
   margin-top var(--spacing-5)
+
+.mt-3
+  margin-top var(--spacing-3)
 </style>
