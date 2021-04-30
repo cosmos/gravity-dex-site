@@ -27,7 +27,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Swap and pool with the first interchain exchange on Cosmos Hub using the IBC protocol. Register now for the incentivized testnet!',
+          'Swap and pool with the first interchain exchange on Cosmos Hub using the IBC protocol.',
       },
       // Open Graph
       {
@@ -44,7 +44,7 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'Swap and pool with the first interchain exchange on Cosmos Hub using the IBC protocol. Register now for the incentivized testnet!',
+          'Swap and pool with the first interchain exchange on Cosmos Hub using the IBC protocol.',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
@@ -73,7 +73,7 @@ export default {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'Swap and pool with the first interchain exchange on Cosmos Hub using the IBC protocol. Register now for the incentivized testnet!',
+          'Swap and pool with the first interchain exchange on Cosmos Hub using the IBC protocol.',
       },
       {
         hid: 'twitter:image',

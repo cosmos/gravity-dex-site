@@ -1,47 +1,33 @@
 <template>
   <div class="cards-container">
-    <nuxt-link
-      v-for="item in items"
-      :key="item.title"
-      :to="item.href"
-      class="card-item"
-    >
+    <tm-link :href="$t('ctaFirstUrl')" class="card-item">
       <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted">
-        {{ item.overline }}
+        {{ $t('ctaFirstOverline') }}
       </div>
       <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
-        {{ item.title }} ↗
+        {{ $t('ctaFirstTitle') }} ↗
       </div>
-    </nuxt-link>
+    </tm-link>
+    <!-- <tm-link :href="$t('ctaSecondUrl')" class="card-item">
+      <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted">
+        {{ $t('ctaSecondOverline') }}
+      </div>
+      <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
+        {{ $t('ctaSecondTitle') }} ↗
+      </div>
+    </tm-link>
+    <tm-link :href="$t('ctaThirdUrl')" class="card-item">
+      <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted">
+        {{ $t('ctaThirdOverline') }}
+      </div>
+      <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
+        {{ $t('ctaThirdTitle') }} ↗
+      </div>
+    </tm-link> -->
   </div>
 </template>
 
-<script>
-export default {
-  // TODO
-  data() {
-    return {
-      items: [
-        {
-          href: 'https://gravitydex.io',
-          overline: 'Guide',
-          title: 'Participant Guide',
-        },
-        {
-          href: '/',
-          overline: 'Guide',
-          title: 'Rules & Regulations',
-        },
-        {
-          href: '/',
-          overline: 'Support',
-          title: 'Resources',
-        },
-      ],
-    }
-  },
-}
-</script>
+<script></script>
 
 <style lang="stylus" scoped>
 .cards-container
@@ -54,6 +40,7 @@ export default {
   hover-raise(-3px)
   box-shadow var(--elevation-4)
   background-color var(--fg)
+  grid-column-start 2 // TODO
 
 .card-item .title
   margin-top var(--spacing-3)
