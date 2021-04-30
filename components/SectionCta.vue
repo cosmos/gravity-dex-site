@@ -4,7 +4,7 @@
       <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted">
         {{ $t('ctaFirstOverline') }}
       </div>
-      <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
+      <div class="title tm-rf1 tm-bold tm-lh-title tm-title mt-3">
         {{ $t('ctaFirstTitle') }} ↗
       </div>
     </tm-link>
@@ -12,7 +12,7 @@
       <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted">
         {{ $t('ctaSecondOverline') }}
       </div>
-      <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
+      <div class="title tm-rf1 tm-bold tm-lh-title tm-title mt-3">
         {{ $t('ctaSecondTitle') }} ↗
       </div>
     </tm-link>
@@ -20,7 +20,7 @@
       <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted">
         {{ $t('ctaThirdOverline') }}
       </div>
-      <div class="title tm-rf1 tm-bold tm-lh-title tm-title">
+      <div class="title tm-rf1 tm-bold tm-lh-title tm-title mt-3">
         {{ $t('ctaThirdTitle') }} ↗
       </div>
     </tm-link> -->
@@ -40,17 +40,11 @@
   hover-raise(-3px)
   box-shadow var(--elevation-4)
   background-color var(--fg)
-  grid-column-start 2 // TODO
 
-.card-item .title
-  margin-top var(--spacing-3)
-
-@media $breakpoint-medium
-  .cards-container
-    grid-template-columns repeat(2, 1fr)
-
-@media $breakpoint-large
-  // Intro
+@media $breakpoint-small
   .cards-container
     grid-template-columns repeat(3, 1fr)
+
+  .card-item
+    grid-column-start 2
 </style>
