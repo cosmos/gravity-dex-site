@@ -15,7 +15,7 @@ module.exports = {
   prizeOverline: 'Prize pool',
   prizeTitle: '$200,000 At Stake',
   prizeDesc:
-    'The Gravity DEX testnet competition prize pool totalling more than $200,000 in ATOM and 10 sponsored tokens from the Cosmos ecosystem.',
+    'The Gravity DEX testnet competition prize pool totalling more than $200,000 in ATOM and 12 sponsored tokens from the Cosmos ecosystem.',
   mainPrize: 'Main prize',
   registerOverline: 'Registration Closed',
   registerTitle: 'The Future of DeFi starts here',
@@ -41,7 +41,8 @@ module.exports = {
   winnersTitle: 'Winners announced',
   winnersDay: '18',
   winnersMonth: 'May',
-  ctaFirstUrl: 'http://gravitydex.io', // TODO
+  ctaFirstUrl:
+    'https://medium.com/tendermint/gravity-dex-competition-guide-fcac06e94762',
   ctaFirstOverline: 'Guide',
   ctaFirstTitle: 'Participant Guide',
   ctaSecondUrl: 'http://gravitydex.io', // TODO

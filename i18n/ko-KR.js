@@ -41,7 +41,8 @@ module.exports = {
   winnersTitle: '수상자 발표',
   winnersDay: '18일',
   winnersMonth: 'May월',
-  ctaFirstUrl: 'http://gravitydex.io',
+  ctaFirstUrl:
+    'https://medium.com/tendermint/gravity-dex-competition-guide-2336b17b8fce',
   ctaFirstOverline: '안내서', // TODO
   ctaFirstTitle: '참가자 가이드', // TODO
   ctaSecondUrl: 'http://gravitydex.io',
