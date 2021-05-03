@@ -39,7 +39,7 @@ module.exports = {
   competitionMonth: '5월',
   winnersTitle: '수상자 발표',
   winnersDay: '18일',
-  winnersMonth: 'May월',
+  winnersMonth: '5월',
   ctaFirstUrl:
     'https://medium.com/tendermint/gravity-dex-competition-guide-2336b17b8fce',
   ctaFirstOverline: '안내서', // TODO

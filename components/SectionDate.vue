@@ -35,10 +35,10 @@
       <span class="bottom-right" />
       <div class="event tm-rf-0 tm-lh-title">{{ $t('winnersTitle') }}</div>
       <div class="title tm-rf3 tm-bold tm-lh-title tm-title">
-        {{ $t('competitionDay') }}
+        {{ $t('winnersDay') }}
       </div>
       <div class="title tm-rf0 tm-bold tm-lh-title tm-title">
-        {{ $t('competitionMonth') }}
+        {{ $t('winnersMonth') }}
       </div>
     </div>
   </div>
