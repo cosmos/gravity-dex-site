@@ -70,6 +70,11 @@ export default {}
   color var(--white-800)
   font-feature-settings 'liga' on, 'calt' on, 'zero' on // safari
 
+.btn-group
+  display flex
+  flex-direction column
+  gap 0 var(--grid-gap-x)
+
 @media $breakpoint-small
   .btn-group
     display block
