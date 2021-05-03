@@ -113,27 +113,12 @@
         <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5">
           {{ $t('registerTitle') }}
         </h1>
-        <p
-          v-if="$i18n.locale === 'zh'"
-          class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure"
-        >
-          {{ totalCount }} {{ $t('registerTitleUsers')
-          }}{{ $t('registerDesc') }}
-        </p>
-        <p
-          v-else-if="$i18n.locale === 'ko'"
-          class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure"
-        >
-          {{ totalCount }} {{ $t('registerTitleUsers') }}
-          {{ $t('registerDesc') }}
-        </p>
-        <p v-else class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
-          {{ totalCount }} {{ $t('registerTitleUsers') }}
+        <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
           {{ $t('registerDesc') }}
         </p>
       </div>
       <section-countdown class="center mt-9" />
-      <div class="center mt-9">
+      <!-- <div class="center mt-9">
         <p class="subtitle tm-rf-1 tm-lh-title">
           {{ $t('registerDate') }}
         </p>
@@ -146,7 +131,7 @@
           class="mt-7"
           >{{ $t('registerCta') }}</tm-button
         >
-      </div>
+      </div> -->
       <div class="mt-10">
         <section-cta />
       </div>
@@ -169,23 +154,7 @@
 </template>
 
 <script>
-import axios from 'axios'
-import commaNumber from 'comma-number'
-
-export default {
-  async asyncData() {
-    const data = (
-      await axios.get(`https://backend.tendermint.com/dex-registration`)
-    ).data
-    return { data }
-  },
-  computed: {
-    totalCount() {
-      const num = this.data.registration_count
-      return commaNumber(num)
-    },
-  },
-}
+export default {}
 </script>
 
 <style lang="stylus" scoped>

@@ -7,17 +7,26 @@
       <p class="subtitle tm-rf0 tm-rf1-m-up tm-lh-copy tm-measure">
         {{ $t('heroDesc') }}
       </p>
-      <p class="subtitle tm-rf-1 tm-lh-title">
+      <!-- <p class="subtitle tm-rf-1 tm-lh-title">
         {{ $t('heroDate') }}
-      </p>
+      </p> -->
       <div class="btn-group mt-7">
         <tm-button
-          to-link="internal"
-          to="signup"
+          to-link="external"
+          href="https://gravitydex.io/app"
           size="l"
           variant="contained"
           class="btn"
           >{{ $t('heroCta') }}</tm-button
+        >
+        <tm-button
+          to-link="external"
+          :href="$t('ctaFirstUrl')"
+          size="l"
+          variant="text"
+          class="btn"
+          >{{ $t('ctaFirstTitle')
+          }}<span class="icon__right">&#8599;</span></tm-button
         >
       </div>
     </div>

@@ -1,8 +1,8 @@
 module.exports = {
   heroHeading: '在Cosmos享受DeFi',
   heroDesc:
-    'Gravity DEX测试网竞赛将于5月4日开始，ATOM和Cosmos资产组成了一共200,000美元的奖金池。',
-  heroCta: '获取更新', // TODO
+    'Gravity DEX测试网竞赛已于5月4日开始，ATOM和Cosmos资产组成了一共200,000美元的奖金池。',
+  heroCta: '参加',
   heroDate: '报名截止。 比赛于5月4日开始', // TODO
   indexOverline: 'Gravity DEX是什么？',
   indexTitle: '最先进的链间DEX',
@@ -20,10 +20,11 @@ module.exports = {
   registerOverline: '报名截止', // TODO
   registerTitle: 'Cosmos的DeFi现在开始', // TODO
   registerTitleUsers: '用户', // TODO
-  registerDesc: '已注册参加Gravity DEX测试网竞赛。',
+  registerDesc:
+    '比赛已经开始。 抢购您的太空服并开始交易，有机会在太空竞赛中取得领先。',
   registerCta: '获取更新', // TODO
-  registerDate: '比赛于5月4日开始。', // TODO
-  countdownTitle: '比赛剩余时间', // TODO
+  registerDate: '比赛于5月11日結束。', // TODO
+  countdownTitle: '比赛于5月11日結束。',
   register: '注册',
   privacy: '隐私政策',
   terms: '条款及细则',
@@ -44,9 +45,10 @@ module.exports = {
     'https://medium.com/tendermint/gravity-dex-%E7%AB%9E%E8%B5%9B%E6%8C%87%E5%8D%97-1c41b6bcf921',
   ctaFirstOverline: '指导', // TODO
   ctaFirstTitle: '竞赛指南', // TODO
-  ctaSecondUrl: 'http://gravitydex.io',
-  ctaSecondOverline: '指导', // TODO
-  ctaSecondTitle: '规章制度', // TODO
+  ctaSecondUrl:
+    'https://bharvest.medium.com/%E5%85%B3%E4%BA%8Egravity-dex%E7%AB%9E%E8%B5%9B%E7%9A%844%E4%B8%AA%E9%A1%BB%E7%9F%A5%E4%BA%8B%E9%A1%B9-680400094524',
+  ctaSecondOverline: '资源',
+  ctaSecondTitle: '竞争机制',
   ctaThirdUrl: 'http://gravitydex.io',
   ctaThirdOverline: '协助', // TODO
   ctaThirdTitle: '资源', // TODO
