@@ -5,3 +5,10 @@
 /forms https://forms.gle/LrX3RffLFpdqcTLh8
 /legal https://gravitydex.io/terms-and-conditions.pdf
 /terms https://gravitydex.io/terms-and-conditions.pdf
+
+# Gravidy-DEX endpoint
+/app/* https://d2acv4xwjreiuz.cloudfront.net/:splat 200
+/app https://d2acv4xwjreiuz.cloudfront.net 200
+/static/* https://d2acv4xwjreiuz.cloudfront.net/static/:splat 200
+/manifest.json https://d2acv4xwjreiuz.cloudfront.net/manifest.json 200
+/assets/* https://d2acv4xwjreiuz.cloudfront.net/assets/:splat 200
