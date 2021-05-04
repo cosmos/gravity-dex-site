@@ -1,6 +1,6 @@
 <template>
-  <div class="cards-container">
-    <tm-link :href="$t('ctaFirstUrl')" class="card-item">
+  <div class="cards-container tm-wrapper tm-grid-base">
+    <tm-link :href="$t('ctaFirstUrl')" class="card-item first">
       <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted">
         {{ $t('ctaFirstOverline') }}
       </div>
@@ -8,7 +8,7 @@
         {{ $t('ctaFirstTitle') }} ↗
       </div>
     </tm-link>
-    <!-- <tm-link :href="$t('ctaSecondUrl')" class="card-item">
+    <tm-link :href="$t('ctaSecondUrl')" class="card-item second">
       <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted">
         {{ $t('ctaSecondOverline') }}
       </div>
@@ -16,7 +16,7 @@
         {{ $t('ctaSecondTitle') }} ↗
       </div>
     </tm-link>
-    <tm-link :href="$t('ctaThirdUrl')" class="card-item">
+    <!-- <tm-link :href="$t('ctaThirdUrl')" class="card-item">
       <div class="heading tm-rf-1 tm-medium tm-lh-title tm-overline tm-muted">
         {{ $t('ctaThirdOverline') }}
       </div>
@@ -41,10 +41,14 @@
   box-shadow var(--elevation-4)
   background-color var(--fg)
 
-@media $breakpoint-small
-  .cards-container
-    grid-template-columns repeat(3, 1fr)
+.first
+.second
+  grid-column 1/-1
 
-  .card-item
-    grid-column-start 2
+@media $breakpoint-xl
+  .first
+    grid-column 3/span 4
+
+  .second
+    grid-column 7/span 4
 </style>

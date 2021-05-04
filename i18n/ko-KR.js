@@ -1,8 +1,8 @@
 module.exports = {
   heroHeading: 'Cosmos에 DeFi를',
   heroDesc:
-    'Gravity DEX 트레이딩 대회가 5월 4일에 시작합니다. 총 상금 $200,000가 ATOM과 12가지 Cosmos 자산으로 수여됩니다.',
-  heroCta: '업데이트 받기', // TODO
+    'Gravity DEX 테스트 넷 대회가 5 월 4 일에 시작되었습니다. 총 상금 $200,000가 ATOM과 12가지 Cosmos 자산으로 수여됩니다.',
+  heroCta: '참가하다',
   heroDate: '등록이 마감되었습니다. 대회 시작 5 월 4 일', // TODO
   indexOverline: 'Gravity DEX는?',
   indexTitle: '가장 진보한 인터체인 DEX',
@@ -17,14 +17,13 @@ module.exports = {
   prizeDesc:
     'Gravity DEX 테스트넷 트레이딩 대회의 총 상금 200,000$는 ATOM과 Cosmos 생태계의 스폰서 토큰 10가지로 이루어져 있습니다.',
   mainPrize: '주요 상금',
-  registerOverline: '등록 마감', // TODO
-  registerTitle: 'DeFi의 미래는 여기서 시작됩니다', // TODO
-  registerTitleUsers: '명의', // TODO
+  registerOverline: '지금 거래하세요',
+  registerTitle: '최고의 트레이더가 이기게하십시오',
   registerDesc:
-    '사용자가 Gravity DEX 테스트 넷 대회에 참가하기 위해 등록했습니다.',
-  registerCta: '업데이트 받기', // TODO
-  registerDate: '대회는 5 월 4 일에 시작됩니다.', // TODO
-  countdownTitle: '경쟁까지 남은 시간', // TODO
+    '경쟁이 시작되었습니다. 우주복을 입고 우주 경쟁에서 앞서 나갈 수있는 기회를 위해 거래를 시작하십시오.',
+  registerCta: '업데이트 받기',
+  registerDate: '대회는 5 월 11 일에 종료됩니다.',
+  countdownTitle: '대회는 5 월 11 일에 종료됩니다.',
   register: '지원',
   privacy: ' 개인 정보',
   terms: '이용 약관',
@@ -40,14 +39,15 @@ module.exports = {
   competitionMonth: '5월',
   winnersTitle: '수상자 발표',
   winnersDay: '18일',
-  winnersMonth: 'May월',
+  winnersMonth: '5월',
   ctaFirstUrl:
     'https://medium.com/tendermint/gravity-dex-competition-guide-2336b17b8fce',
   ctaFirstOverline: '안내서', // TODO
   ctaFirstTitle: '참가자 가이드', // TODO
-  ctaSecondUrl: 'http://gravitydex.io',
-  ctaSecondOverline: '안내서', // TODO
-  ctaSecondTitle: '규칙 및 규정', // TODO
+  ctaSecondUrl:
+    'https://bharvest.medium.com/gravity-dex-%EB%8C%80%ED%9A%8C%EC%97%90-%EA%B4%80%ED%95%B4-%EA%BC%AD-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%A0-4%EA%B0%80%EC%A7%80-%EC%82%AC%EC%8B%A4-74b40f9d4681',
+  ctaSecondOverline: '자원',
+  ctaSecondTitle: '경쟁 역학',
   ctaThirdUrl: 'http://gravitydex.io',
   ctaThirdOverline: '지원하다', // TODO
   ctaThirdTitle: '자원', // TODO
