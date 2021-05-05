@@ -3,7 +3,6 @@
 /competition /app 301!
 / /app 301!
 /app /app/ 301!
-https://gravitydex.io/app https://gravitydex.io/app/ 301!
 
 # Redirect URLs to external websites 301!
 /legal https://gravitydex.io/terms-and-conditions.pdf
