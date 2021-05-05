@@ -17,6 +17,8 @@ module.exports = {
   prizeDesc:
     'The Gravity DEX testnet competition prize pool totalling more than $200,000 in ATOM and 12 sponsored tokens from the Cosmos ecosystem.',
   mainPrize: 'Main prize',
+  bugOverline: 'Prize pool',
+  bugCta: 'Bug bounties',
   registerOverline: 'Trade now',
   registerTitle: 'Let the best traders win',
   registerDesc:
