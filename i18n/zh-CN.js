@@ -17,6 +17,8 @@ module.exports = {
   prizeDesc:
     'Gravity DEX测试网竞赛奖池总额超过200,000美元，由ATOM和来自Cosmos生态系统的10种赞助者代币构成。',
   mainPrize: '主要奖励',
+  bugOverline: '奖池',
+  bugCta: '错误赏金',
   registerOverline: '报名截止', // TODO
   registerTitle: 'Cosmos的DeFi现在开始', // TODO
   registerTitleUsers: '用户', // TODO

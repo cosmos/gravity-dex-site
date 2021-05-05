@@ -17,6 +17,8 @@ module.exports = {
   prizeDesc:
     'Gravity DEX 테스트넷 트레이딩 대회의 총 상금 200,000$는 ATOM과 Cosmos 생태계의 스폰서 토큰 10가지로 이루어져 있습니다.',
   mainPrize: '주요 상금',
+  bugOverline: '총 상금',
+  bugCta: '버그 현상금',
   registerOverline: '지금 거래하세요',
   registerTitle: '최고의 트레이더가 이기게하십시오',
   registerDesc:

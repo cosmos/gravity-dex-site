@@ -79,19 +79,19 @@
                 </h1>
               </div>
             </div>
-            <!-- <div
+            <div
               class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted mt-8"
             >
-              Prize pool
+              {{ $t('bugOverline') }}
             </div>
             <div class="mt-5 z-text">
               <tm-link
-                href="http://gravitydex.io"
+                href="https://github.com/tendermint/liquidity/issues"
                 class="tm-link-external tm-rf2 tm-bold tm-lh-title"
               >
-                Bug bounties
+                {{ $t('bugCta') }}
               </tm-link>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
