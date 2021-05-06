@@ -53,4 +53,93 @@ module.exports = {
   ctaThirdUrl: 'http://gravitydex.io', // TODO
   ctaThirdOverline: 'Support',
   ctaThirdTitle: 'Resources',
+  faqOverline: 'Faq',
+  faqTitle: 'Frequently asked questions',
+  agendas: [
+    {
+      title: 'I have run out of ATOM tokens, what should I do?',
+      details:
+        'When you start the competition you are allocated 500 ATOM tokens. Unfortunately, these will not be replenished once you have run out. You are effectively out of the competition.',
+      active: false,
+    },
+    {
+      title:
+        'Is there a way to get more ATOM if you spend your last ATOM on gas to trade for ATOM but the transaction fails?',
+      details:
+        'No. As this is a competition, it would not be fair to people who successfully managed to operate without running out of gas. We understand that some users had multiple failed transactions in a row that consumed the fee. However, as with any transaction, there is always the possibility that an operation will fail. We, therefore, encourage you to ask for support before continuing to burn gas.',
+      active: false,
+    },
+    {
+      title: 'Why did my transaction fail?',
+      details:
+        'The most likely reason for your transaction failing is because you did not have enough funds to cover the transaction costs.',
+      active: false,
+    },
+    {
+      title: 'Can I use my own personal ATOM in the competition?',
+      details:
+        'This is a testnet environment and does not use real ATOM tokens. Please do not send your own mainnet ATOM tokens to the testnet.',
+      active: false,
+    },
+    {
+      title: 'I cannot receive ATOM tokens with my Ledger address?',
+      details:
+        'If you are experiencing issues with your Ledger connection, you should consider importing the Ledger account into Keplr via mnemonics so that you can see your tokens. Check this [useful article](https://medium.com/tendermint/gravity-dex-competition-guide-fcac06e94762) for guidance on this.',
+      active: false,
+    },
+    {
+      title:
+        'I get a "failed to execute" message when I try to swap tokens. What should I do?',
+      details:
+        'Please try the same transaction using smaller amounts of funds.',
+      active: false,
+    },
+    {
+      title: 'Are there any public APIs for the Gravity DEX?',
+      details:
+        'The Gravity DEX testnet is now optimized for automated trading. For arbitrage bot operators, you can connect the following APIs: \n\n - REST: [https://competition.bharvest.io:1317](https://competition.bharvest.io:1317) \n\n - RPC: [https://competition.bharvest.io](https://competition.bharvest.io) \n\n - GRPC: [competition.bharvest.io:9090](competition.bharvest.io:9090)',
+      active: false,
+    },
+    {
+      title:
+        "Is the internal price ratio supposed to be the price it trades in the DEX? It's different from the price on the swap page.",
+      details:
+        'There was some initial sync delay in the price page causing a gap between the global price and the pool price. We have worked on optimizing this and the issue should now be resolved.',
+      active: false,
+    },
+    {
+      title:
+        'Why are the gas fees so high? At 0.3 ATOM ($7-8) per transaction?',
+      details:
+        'The gas fee has been set this way to encourage players to carefully think about their strategies and consider the price of gas. Often, because tokens are not real, people spend gas without consideration. \n\n It also allows us to slowly stabilize the testnet, as a higher gas fee helps to prevent an explosion of transactions. We will gradually reduce the minimum gas fee when we upgrade to better servers. \n\n Keep in mind that this is a testnet and the final product will not be the same. The Gravity DEX that $ATOM stakers voted into the Cosmos Hub will have drastically lower tx fees ($0.01-$0.10).',
+      active: false,
+    },
+    {
+      title:
+        'Why do I see "insufficient balance" when I clearly have enough funds?',
+      details:
+        'You need to have sufficient coins in your wallet for BOTH currencies involved. Check that you have sufficient balance on both sides as adding liquidity requires two different coins to receive a pool coin. Note, this is only the case if you want to add liquidity to a pool, this does not apply if you just want to swap.',
+      active: false,
+    },
+    {
+      title:
+        'Is there going to be a gas-free day so that I can take part again?',
+      details:
+        'No, we decided that this would be unfair to those who carefully executed swaps considering the gas cost.',
+      active: false,
+    },
+    {
+      title:
+        'Any chance of being able to pay fees post-swap so that I can recover from 0-ATOM balance?',
+      details:
+        'Unfortunately, no, as this would be very unfair to those participants who didn’t run out of ATOM.',
+      active: false,
+    },
+    {
+      title: "Why can't I create a pool?",
+      details:
+        'At this point of the competition, all the pools have already been created by the participants. Instead, you can add liquidity to existing pools. \n\n If you have further questions, please visit the Cosmos community [Discord channel](https://discord.gg/vcExX9T). The team will be able to address your questions there. Alternatively, you can send an email to &#099;&#111;&#109;&#109;&#117;&#110;&#105;&#099;&#097;&#116;&#105;&#111;&#110;&#115;&#064;&#099;&#111;&#115;&#109;&#111;&#115;&#046;&#110;&#101;&#116;&#119;&#111;&#114;&#107; and if you find a bug, you can report it here: \n\n [github.com/tendermint/liquidity](https://github.com/tendermint/liquidity).\n\n Here are some more invaluable resources for you when using the Gravity DEX testnet: \n\n\n - [Tutorial](https://medium.com/tendermint/gravity-dex-competition-guide-fcac06e94762) \n\n - [4 Things you should know about Gravity Dex Competition](https://medium.com/tendermint/4-things-you-should-know-about-gravity-dex-competition-784be6643d4f) \n\n - [Keplr FAQ](https://faq.keplr.app)',
+      active: false,
+    },
+  ],
 }
