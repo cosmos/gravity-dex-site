@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "comma-number": "^2.0.2",
+    "comma-number": "^2.1.0",
     "core-js": "^3.11.0",
     "jquery": "^3.6.0",
     "markdown-it": "^12.0.6",
