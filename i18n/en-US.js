@@ -1,17 +1,17 @@
 module.exports = {
   heroHeading: 'Bringing DeFi to Cosmos',
   heroDesc:
-    'The Gravity DEX testnet competition has started on May 4 with a $200,000 prize pool in ATOM and 12 additional Cosmos assets.',
-  heroCta: 'Participate',
+    'The Gravity DEX testnet competition has ended. Winners will be announced on May 18.',
+  heroCta: 'Preliminary results',
   heroDate: 'Registration closed. Competition starts May 4',
   indexOverline: 'What is it?',
   indexTitle: 'The Most Advanced Interchain DEX',
   indexDesc:
     'Gravity uses the Inter-Blockchain Communication (IBC) protocol to enable swaps and pools of digital assets between any two blockchains within the Cosmos ecosystem or beyond. Gravity also achieves superior efficiency compared to other AMMs due to its groundbreaking Equivalent Swap Price Model.',
   titleOverline: 'Testnet competition',
-  titleTitle: 'The more you trade, the more you win.',
+  titleTitle: 'For the best traders, the best rewards.',
   titleDesc:
-    'Participants compete for the top score, which is based on a combination of their activity and profits. The top ⅓ will receive prizes proportional to their leaderboard position. Participants must execute deposits, withdrawals, and swaps across at least 3 pools to be eligible.',
+    'Participants competed for the top score, which was based on a combination of their activity and profits. The top ⅓ will receive prizes proportional to their leaderboard position.',
   prizeOverline: 'Prize pool',
   prizeTitle: '$200,000 At Stake',
   prizeDesc:
@@ -20,9 +20,9 @@ module.exports = {
   bugOverline: 'Prize pool',
   bugCta: 'Bug bounties',
   registerOverline: 'Trade now',
-  registerTitle: 'Let the best traders win',
+  registerTitle: 'The future of  DeFi started here.',
   registerDesc:
-    'The competition has started. Grab your space suits and start trading for a chance to get ahead on the space race.',
+    'The competition has ended. Participant information is being verified, and the winners will be announced on May 18.',
   registerCta: 'Get Updates',
   registerDate: 'Competition ends on May 11',
   countdownTitle: 'Competition ends on May 11',
@@ -50,7 +50,7 @@ module.exports = {
     'https://medium.com/tendermint/4-things-you-should-know-about-gravity-dex-competition-784be6643d4f',
   ctaSecondOverline: 'Resources',
   ctaSecondTitle: 'Competition Mechanics',
-  ctaThirdUrl: 'http://gravitydex.io', // TODO
+  ctaThirdUrl: 'http://gravitydex.io',
   ctaThirdOverline: 'Support',
   ctaThirdTitle: 'Resources',
   faqOverline: 'Faq',

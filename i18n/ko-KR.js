@@ -1,17 +1,17 @@
 module.exports = {
   heroHeading: 'Cosmos에 DeFi를',
   heroDesc:
-    'Gravity DEX 테스트 넷 대회가 5 월 4 일에 시작되었습니다. 총 상금 $200,000가 ATOM과 12가지 Cosmos 자산으로 수여됩니다.',
-  heroCta: '참가하다',
+    'Gravity DEX 테스트 넷 대회가 종료되었습니다. 당첨자는 5 월 18 일에 발표됩니다.',
+  heroCta: '예비 결과',
   heroDate: '등록이 마감되었습니다. 대회 시작 5 월 4 일', // TODO
   indexOverline: 'Gravity DEX는?',
   indexTitle: '가장 진보한 인터체인 DEX',
   indexDesc:
     'Gravity는 인터-블록체인 커뮤니케이션 (IBC) 프로토콜로 설계되어, Cosmos 생태계 안팎의 어떤 두 블록체인 간에도 디지털 자산의 스왑과 풀 제공이 가능합니다. 또한, 혁신적인 Equivalent Swap Price Model을 도입하여 다른 AMM보다 훨씬 효율적인 거래가 가능합니다.',
   titleOverline: '테스트넷 트레이딩 대회',
-  titleTitle: '상위 트레이더들에게는 상금을...',
+  titleTitle: '최고의 트레이더에게 최고의 보상.',
   titleDesc:
-    '참가자들은 트레이딩 활동과 수익으로 구성된 점수로 경쟁합니다. 상위 ⅓에 속한 참가자들은 자신의 순위에 비례하여 상금을 받습니다. 상금을 받으려면 반드시 3개 이상의 풀에서 예치, 스왑을 실행해야 합니다.',
+    '참가자들은 그들의 활동과 이익의 조합을 바탕으로 최고 점수를 놓고 경쟁했습니다. 상위 ⅓는 순위표 위치에 비례하여 상을 받게됩니다.',
   prizeOverline: '총 상금',
   prizeTitle: '총 상금 $200,000 부여',
   prizeDesc:
@@ -20,9 +20,9 @@ module.exports = {
   bugOverline: '총 상금',
   bugCta: '버그 현상금',
   registerOverline: '지금 거래하세요',
-  registerTitle: '최고의 트레이더가 이기게하십시오',
+  registerTitle: 'DeFi의 미래는 여기서 시작되었습니다.',
   registerDesc:
-    '경쟁이 시작되었습니다. 우주복을 입고 우주 경쟁에서 앞서 나갈 수있는 기회를 위해 거래를 시작하십시오.',
+    '경쟁이 끝났습니다. 참가자 정보가 확인 중이며 당첨자는 5 월 18 일에 발표됩니다.',
   registerCta: '업데이트 받기',
   registerDate: '대회는 5 월 11 일에 종료됩니다.',
   countdownTitle: '대회는 5 월 11 일에 종료됩니다.',

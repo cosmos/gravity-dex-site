@@ -17,15 +17,7 @@
           size="l"
           variant="contained"
           class="btn"
-          >{{ $t('heroCta') }}</tm-button
-        >
-        <tm-button
-          to-link="external"
-          :href="$t('ctaFirstUrl')"
-          size="l"
-          variant="text"
-          class="btn"
-          >{{ $t('ctaFirstTitle')
+          >{{ $t('heroCta')
           }}<span class="icon__right">&#8599;</span></tm-button
         >
       </div>
