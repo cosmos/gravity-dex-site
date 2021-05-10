@@ -28,7 +28,7 @@
     "markdown-it": "^12.0.6",
     "moment-timezone": "^0.5.33",
     "nuxt": "^2.15.3",
-    "nuxt-i18n": "^6.26.0",
+    "nuxt-i18n": "^6.27.0",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
     "querystring": "^0.2.1",
