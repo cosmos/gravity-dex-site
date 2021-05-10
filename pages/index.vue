@@ -102,7 +102,7 @@
 
     <div class="section-register tm-section tm-wrapper tm-container">
       <div class="register-graphics">
-        <graphics-register-hero class="graphics__item register z-graphics" />
+        <graphics-register-hero class="graphics__item register" />
       </div>
       <div class="tm-wrapper center text-center">
         <div
@@ -110,45 +110,24 @@
         >
           {{ $t('registerOverline') }}
         </div>
-        <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5">
+        <h1 class="title tm-rf6 tm-bold tm-lh-title tm-title mt-5 title-mw">
           {{ $t('registerTitle') }}
         </h1>
         <p class="subtitle tm-rf1 tm-lh-copy mt-7 tm-measure">
           {{ $t('registerDesc') }}
         </p>
       </div>
-      <section-countdown class="center mt-9" />
-      <!-- <div class="center mt-9">
-        <p class="subtitle tm-rf-1 tm-lh-title">
-          {{ $t('registerDate') }}
-        </p>
+      <div class="btn-group mt-10 center">
         <tm-button
-          to-link="internal"
-          to="signup"
-          background-color="var(--white)"
-          color="var(--black)"
+          to-link="external"
+          href="https://gravitydex.io/app"
           size="l"
-          class="mt-7"
-          >{{ $t('registerCta') }}</tm-button
+          variant="contained"
+          class="btn"
+          >{{ $t('heroCta')
+          }}<span class="icon__right">&#8599;</span></tm-button
         >
-      </div> -->
-      <div class="mt-10">
-        <section-cta />
       </div>
-    </div>
-
-    <div class="tm-section tm-container z-text">
-      <div class="tm-wrapper center">
-        <div
-          class="overline tm-rf-1 tm-rf0-m-up tm-medium tm-lh-title tm-overline tm-measure-narrow tm-muted"
-        >
-          {{ $t('faqOverline') }}
-        </div>
-        <h1 class="title tm-rf4 tm-bold tm-lh-title tm-title mt-5">
-          {{ $t('faqTitle') }}
-        </h1>
-      </div>
-      <section-questions class="mt-10" />
     </div>
   </main>
 </template>
@@ -163,6 +142,9 @@ export default {}
   color var(--white-800)
   position relative
   z-index 50
+
+.title-mw
+  max-width 8em
 
 // Graphics
 .graphics
@@ -187,9 +169,9 @@ export default {}
 .register
   bottom 0
   left auto
-  right -98%
+  right -78%
   width 150%
-  margin-bottom -96%
+  margin-bottom -76%
   margin-left -135%
   max-width 144rem
   min-width 40rem
@@ -258,7 +240,7 @@ export default {}
     margin-left 60%
 
   .graphics__item
-    left 170%
+    left 120%
 
   .section-about
     margin-top 0
