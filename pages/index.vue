@@ -169,9 +169,9 @@ export default {}
 .register
   bottom 0
   left auto
-  right -98%
+  right -78%
   width 150%
-  margin-bottom -96%
+  margin-bottom -76%
   margin-left -135%
   max-width 144rem
   min-width 40rem
@@ -240,7 +240,7 @@ export default {}
     margin-left 60%
 
   .graphics__item
-    left 170%
+    left 120%
 
   .section-about
     margin-top 0
