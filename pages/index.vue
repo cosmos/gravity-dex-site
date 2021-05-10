@@ -117,7 +117,6 @@
           {{ $t('registerDesc') }}
         </p>
       </div>
-      <section-countdown class="center mt-9" />
       <div class="btn-group mt-10 center">
         <tm-button
           to-link="external"
