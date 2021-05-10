@@ -1,13 +1,15 @@
 # Redirect URLs (FROM, TO, 301!)
 /register /app 301!
 /competition /app 301!
-/ /app 301!
+
+# Gravity-DEX endpoint after the end of the competition
+/ /about 301!
 
 # Redirect URLs to external websites 301!
 /legal https://gravitydex.io/terms-and-conditions.pdf
 /terms https://gravitydex.io/terms-and-conditions.pdf
 
-# Gravidy-DEX endpoint
+# Gravity-DEX endpoint
 /app/* https://d2acv4xwjreiuz.cloudfront.net/:splat 200
 /app https://d2acv4xwjreiuz.cloudfront.net 200
 /static/* https://d2acv4xwjreiuz.cloudfront.net/static/:splat 200
