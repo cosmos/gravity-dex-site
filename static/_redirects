@@ -2,8 +2,8 @@
 /register /app 301!
 /competition /app 301!
 
-# Gravity-DEX endpoint after the end of the competition
-/ /about 301!
+# Redirect / -> cosmos.network/gravity-dex
+/ https://cosmos.network/gravity-dex 301!
 
 # Redirect URLs to external websites 301!
 /legal https://gravitydex.io/terms-and-conditions.pdf
