@@ -2,8 +2,8 @@
   <div class="tm-container tm-wrapper tm-grid-base">
     <div class="left">
       <tm-accordion-item
-        v-for="item in firstChunk"
-        :key="item.id"
+        v-for="(item, id) in firstChunk"
+        :key="id"
         :multiple="multiple"
         :group-id="groupId"
         :item="item"
@@ -12,8 +12,8 @@
     </div>
     <div class="right">
       <tm-accordion-item
-        v-for="item in secondChunk"
-        :key="item.id"
+        v-for="(item, id) in secondChunk"
+        :key="id"
         :multiple="multiple"
         :group-id="groupId"
         :item="item"

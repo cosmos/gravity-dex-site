@@ -1,7 +1,11 @@
-# Redirect URLs (FROM, TO, 301!)
-/register /signup
+# Redirect / -> cosmos.network/gravity-dex
+/ https://cosmos.network/gravity-dex 301!
+/* https://cosmos.network/gravity-dex 301!
 
-# Redirect URLs to external websites 301!
-/forms https://forms.gle/LrX3RffLFpdqcTLh8
-/legal https://gravitydex.io/terms-and-conditions.pdf
-/terms https://gravitydex.io/terms-and-conditions.pdf
+# Gravity-DEX endpoint
+/app/* https://d2acv4xwjreiuz.cloudfront.net/:splat 200
+/app https://d2acv4xwjreiuz.cloudfront.net 200
+/static/* https://d2acv4xwjreiuz.cloudfront.net/static/:splat 200
+/manifest.json https://d2acv4xwjreiuz.cloudfront.net/manifest.json 200
+/favicon.ico https://d2acv4xwjreiuz.cloudfront.net/favicon.ico 200
+/assets/* https://d2acv4xwjreiuz.cloudfront.net/assets/:splat 200

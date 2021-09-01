@@ -61,9 +61,7 @@
       @after-leave="endTransition"
     >
       <div v-if="item.active === true && item.details" class="details">
-        <div class="title tm-rf0 tm-lh-copy">
-          {{ item.details }}
-        </div>
+        <div class="title tm-rf0 tm-lh-copy" v-html="md(item.details)" />
       </div>
     </transition>
   </div>
