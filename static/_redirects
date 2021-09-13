@@ -1,5 +1,10 @@
 # Redirect / -> cosmos.network/gravity-dex
 / https://cosmos.network/gravity-dex 301!
+/index.html https://cosmos.network/gravity-dex 301!
+/404 https://cosmos.network/gravity-dex 301!
+/about https://cosmos.network/gravity-dex 301!
+/signup https://cosmos.network/gravity-dex 301!
+/terms https://cosmos.network/gravity-dex 301!
 /* https://cosmos.network/gravity-dex 301!
 
 # Gravity-DEX endpoint
