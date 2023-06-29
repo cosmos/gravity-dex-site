@@ -109,7 +109,7 @@ export default {
     return {
       links: [
         { title: 'Telegram', url: 'https://t.me/cosmosproject' },
-        { title: 'Discord', url: 'https://discord.gg/vcExX9T' },
+        { title: 'Discord', url: 'https://discord.gg/cosmosnetwork' },
       ],
     }
   },
